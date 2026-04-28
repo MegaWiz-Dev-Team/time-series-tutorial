@@ -24,5 +24,8 @@ data/raw/**/*.mmrx
 *.pth
 *.mlx
 
-# OS files
+# OS & IDE files
 .DS_Store
+.vscode/
+.idea/
+*.log
