@@ -45,8 +45,9 @@ TimeSeries/
 ├── data/
 │   ├── raw/
 │   │   ├── patient_001/
-│   │   │   ├── recording.edf      (Raw signal data)
-│   │   │   └── events.json        (Ground Truth Labels from Physician)
+│   │   │   ├── recording.mmrx     (Original container)
+│   │   │   ├── recording.edf      (Extracted signal data)
+│   │   │   └── events.json        (Ground Truth Labels)
 │   │   └── patient_xxx/           (Add new patients here)
 │   ├── processed/
 │   │   └── combined_dataset.npz   (Generated ML features)
