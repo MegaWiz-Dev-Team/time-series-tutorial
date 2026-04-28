@@ -1,0 +1,8 @@
+# Answer key / solution files
+read_hst.py
+extracted/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
