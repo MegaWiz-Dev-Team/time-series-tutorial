@@ -1,8 +1,28 @@
-# Answer key / solution files
-read_hst.py
+# Project Folders
 extracted/
+docs/
+
+# Rust
+hst-detector/target/
+hst-detector/tune.py
+
+# Solution Scripts
+read_hst.py
 
 # Python
+.venv/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Data & Models (large files)
+data/processed/
+data/experiments/
+data/raw/**/*.edf
+data/raw/**/*.mmrx
+*.npz
+*.pth
+*.mlx
+
+# OS files
+.DS_Store

@@ -34,12 +34,27 @@
 
 ---
 
-## 📦 Dataset
+---
 
-### ไฟล์: `HST_Raw_Data.mmrx`
+## 📦 Dataset & Directory Structure
 
-ข้อมูล raw signals จากเครื่อง **ResMed ApneaLink Air** (Type III Home Sleep Test Device)  
-ไฟล์ `.mmrx` คือ **ZIP archive** ที่บรรจุไฟล์ **EDF+ (European Data Format)**
+To support multi-patient analysis and scalable ML pipelines, the project follows this standardized structure:
+
+```text
+TimeSeries/
+├── data/
+│   ├── raw/
+│   │   ├── patient_001/
+│   │   │   ├── recording.edf      (Raw signal data)
+│   │   │   └── events.json        (Ground Truth Labels from Physician)
+│   │   └── patient_xxx/           (Add new patients here)
+│   ├── processed/
+│   │   └── combined_dataset.npz   (Generated ML features)
+│   └── experiments/
+│       └── tuning_history.csv     (Logs of your algorithm tuning)
+├── hst-detector/                  (Rust-based Signal Processing Engine)
+└── hst-mlx/                       (Machine Learning Pipeline)
+```
 
 ### Signal Channels (9 channels)
 
@@ -53,19 +68,11 @@
 | CH5 | **Position** | 1 Hz | code | ท่านอน (Supine/Prone/Left/Right/Upright) |
 | CH6-8 | **Acc x/y/z** | 10 Hz | g | Accelerometer 3 แกน |
 
-### Recording Info
+### ⚠️ Data Challenges for Students
 
-| Metric | Value |
-|--------|-------|
-| **Duration** | ~6.6 ชั่วโมง |
-| **Total data points** | ~2.8 ล้าน samples (รวมทุก channel) |
-| **File size** | ~3.6 MB (compressed) |
-
-### ⚠️ Data Quality Notes
-
-- ค่า **511 (Pulse)** และ **127 (SpO2)** = **sentinel values** → เซนเซอร์ยังไม่พร้อม / สัญญาณหลุด
-- **SpO2 < 88%** ถือว่า clinically significant desaturation
-- **Position** เป็นค่ารหัส ต้อง decode เป็นท่านอน
+- **Noise Floor:** Physiological sensors are noisy. A 90% drop in signal might look like a 50% drop due to background noise.
+- **Sentinel Values:** 511 (Pulse) and 127 (SpO2) must be filtered out before analysis.
+- **Generalization:** Your algorithm should work across different patients with different noise profiles.
 
 ---
 
@@ -184,29 +191,28 @@
 
 ### Prerequisites
 ```bash
-pip install pyedflib pandas numpy matplotlib
+pip install pyedflib pandas numpy matplotlib scikit-learn mlx
 ```
 
-### Quick Start
+### 🧰 Tools Provided (The Scaffolds)
+We provide two powerful engines to jumpstart your analysis:
+1. **`hst-detector` (Rust Engine):** A high-performance signal processing binary. You can use this to test different flow thresholds and see how they match clinical data.
+2. **`hst-mlx` (Deep Learning):** A modern ML pipeline built for Apple Silicon to train neural networks on sleep waveforms.
+
+### Quick Start (Loading Data)
 ```python
-import zipfile
 import pyedflib
+import numpy as np
 
-# 1. Extract .mmrx (it's a ZIP file)
-with zipfile.ZipFile("HST_Raw_Data.mmrx", "r") as z:
-    z.extractall("extracted/")
-
-# 2. Find and read the EDF file
-edf_path = "extracted/ApneaLink Air_*//*.edf"  # main signal file (larger one)
+# Load a patient's recording
+edf_path = "data/raw/patient_001/recording.edf"
 f = pyedflib.EdfReader(edf_path)
 
-# 3. List available signals
-for i in range(f.signals_in_file):
-    print(f"{i}: {f.getLabel(i)} @ {f.getSampleFrequency(i)} Hz")
-
-# 4. Read a signal
-nasal_flow = f.readSignal(0)  # Resp nasal @ 100 Hz
+# Read Nasal Flow (100 Hz)
+nasal_flow = f.readSignal(0) 
 f.close()
+
+print(f"Loaded {len(nasal_flow)} samples of Nasal Flow data.")
 ```
 
 ---
@@ -218,8 +224,8 @@ f.close()
 ```
 1. Fork repo นี้ไปยัง GitHub ส่วนตัวของคุณ
 2. Clone fork มาที่เครื่อง
-3. สร้าง branch ชื่อ: homework/<ชื่อ-นามสกุล>
-4. สร้างโฟลเดอร์ submissions/<ชื่อ-นามสกุล>/
+3. สร้าง branch ชื่อ: `homework/รหัสนักศึกษา_ชื่อ`
+4. สร้างโฟลเดอร์ `submissions/รหัสนักศึกษา_ชื่อ/`
 5. ทำงานใน branch ของคุณ
 6. Push แล้วเปิด Pull Request กลับมายัง repo หลัก
 ```
@@ -228,7 +234,7 @@ f.close()
 
 ```
 submissions/
-└── somchai-jaidee/                    ← ชื่อ-นามสกุล (lowercase, ใช้ - คั่น)
+└── 6xxxxx_สมชาย/                    ← รหัสนักศึกษา_ชื่อจริง (ภาษาไทย)
     ├── notebook.ipynb                 ← Jupyter Notebook หลัก
     ├── README.md                      ← สรุปผลงาน + วิธีรัน
     ├── src/                           ← source code (ถ้ามี)
@@ -245,13 +251,13 @@ submissions/
 ### Pull Request Title Format
 
 ```
-[Level X] ชื่อ-นามสกุล — สรุปสั้นๆ
+[Level X] รหัสนักศึกษา_ชื่อจริง — สรุปสั้นๆ
 ```
 
 **ตัวอย่าง:**
-- `[Level 1] Somchai Jaidee — EDA & Signal Quality Analysis`
-- `[Level 2] Somying Rakdee — Apnea Detection with AHI Calculation`
-- `[Level 3] Somsak Deechai — Full Pipeline + Streamlit Dashboard`
+- `[Level 1] 650123_สมชาย — EDA & Signal Quality Analysis`
+- `[Level 2] 650456_สมหญิง — Apnea Detection with AHI Calculation`
+- `[Level 3] 650789_วิชัย — Full Pipeline + Streamlit Dashboard`
 
 ### PR Description Template
 
@@ -264,7 +270,7 @@ submissions/
 
 ### ⏰ กำหนดส่ง
 
-> ระบุ deadline ที่นี่
+> 🗓️ **5 พฤษภาคม 2569 (23:59 น.)**
 
 ---
 
