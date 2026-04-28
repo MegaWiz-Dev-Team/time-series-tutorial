@@ -6,9 +6,6 @@ docs/
 hst-detector/target/
 hst-detector/tune.py
 
-# Solution Scripts
-read_hst.py
-
 # Python
 .venv/
 __pycache__/
