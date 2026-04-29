@@ -15,6 +15,7 @@ __pycache__/
 # Data & Models (large files)
 data/processed/
 data/experiments/
+data/results/
 data/raw/**/*.edf
 data/raw/**/*.mmrx
 *.npz

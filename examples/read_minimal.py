@@ -8,7 +8,7 @@ import numpy as np
 import os
 
 # Updated Path to the organized data
-EDF_PATH = "data/raw/patient_001/recording.edf"
+EDF_PATH = "data/raw/patient_002/recording.edf"
 
 if not os.path.exists(EDF_PATH):
     print(f"❌ Error: Could not find EDF file at {EDF_PATH}")

@@ -10,44 +10,58 @@ def load_events(json_path):
         data = json.load(f)
     return data['events']
 
-def process_patient(edf_path, events_path, window_sec=60, fs=10):
+def process_patient(edf_path, events_path, norm_stats=None, window_sec=60, fs=10):
     print(f"Reading EDF file: {edf_path}")
     f = pyedflib.EdfReader(edf_path)
     signal_labels = f.getSignalLabels()
     
     flow_idx = -1
     spo2_idx = -1
+    thorax_idx = -1
     for i, label in enumerate(signal_labels):
-        if 'Resp nasal' in label or 'Flow' in label:
+        l = label.lower()
+        if 'flow' in l or 'nasal' in l:
             flow_idx = i
-        elif 'SaO2' in label or 'SpO2' in label:
+        elif 'sao2' in l or 'spo2' in l:
             spo2_idx = i
+        elif 'thorax' in l or 'resp thorax' in l:
+            thorax_idx = i
             
-    if flow_idx == -1 or spo2_idx == -1:
+    if flow_idx == -1 or spo2_idx == -1 or thorax_idx == -1:
         f.close()
-        raise ValueError("Could not find Flow or SpO2 channels")
+        # Fallback to index if labels are tricky
+        if flow_idx == -1: flow_idx = 0
+        if spo2_idx == -1: spo2_idx = 1
+        if thorax_idx == -1: thorax_idx = 2
+        print(f"Warning: Could not find all channels by label in {edf_path}. Using indices 0,1,2.")
         
     flow_fs = f.getSampleFrequency(flow_idx)
     spo2_fs = f.getSampleFrequency(spo2_idx)
+    thorax_fs = f.getSampleFrequency(thorax_idx)
     
     flow_sig = f.readSignal(flow_idx)
     spo2_sig = f.readSignal(spo2_idx)
+    thorax_sig = f.readSignal(thorax_idx)
     f.close()
     
-    n_flow = len(flow_sig)
-    t_flow = np.arange(n_flow) / flow_fs
+    t_flow = np.arange(len(flow_sig)) / flow_fs
+    t_spo2 = np.arange(len(spo2_sig)) / spo2_fs
+    t_thorax = np.arange(len(thorax_sig)) / thorax_fs
     
-    n_spo2 = len(spo2_sig)
-    t_spo2 = np.arange(n_spo2) / spo2_fs
-    
-    duration = max(t_flow[-1], t_spo2[-1])
+    duration = max(t_flow[-1], t_spo2[-1], t_thorax[-1])
     t_target = np.arange(0, duration, 1.0/fs)
     
     flow_resampled = np.interp(t_target, t_flow, flow_sig)
     spo2_resampled = np.interp(t_target, t_spo2, spo2_sig)
+    thorax_resampled = np.interp(t_target, t_thorax, thorax_sig)
     
-    flow_resampled = (flow_resampled - np.mean(flow_resampled)) / np.std(flow_resampled)
-    spo2_resampled = (spo2_resampled - np.mean(spo2_resampled)) / np.std(spo2_resampled)
+    if norm_stats:
+        flow_resampled = (flow_resampled - norm_stats['flow']['mean']) / (norm_stats['flow']['std'] + 1e-9)
+        spo2_resampled = (spo2_resampled - norm_stats['spo2']['mean']) / (norm_stats['spo2']['std'] + 1e-9)
+        thorax_resampled = (thorax_resampled - norm_stats['thorax']['mean']) / (norm_stats['thorax']['std'] + 1e-9)
+    else:
+        # If no norm_stats provided, we might be in the first pass just gathering data
+        return flow_resampled, spo2_resampled, thorax_resampled
     
     events = load_events(events_path)
     
@@ -60,7 +74,17 @@ def process_patient(edf_path, events_path, window_sec=60, fs=10):
     
     for event in events:
         etype = event['t']
-        if etype not in ['OBSTR', 'CNTRL', 'MIXED', 'HYPOP']:
+        # Map specific event types to granular classes
+        # 1: OBSTR, 2: CNTRL, 3: MIXED, 4: HYPOP
+        if etype == 'OBSTR':
+            label = 1
+        elif etype == 'CNTRL':
+            label = 2
+        elif etype == 'MIXED':
+            label = 3
+        elif etype == 'HYPOP':
+            label = 4
+        else:
             continue
             
         start_time = event['s']
@@ -73,11 +97,10 @@ def process_patient(edf_path, events_path, window_sec=60, fs=10):
         if start_idx >= 0 and end_idx < len(t_target):
             flow_win = flow_resampled[start_idx:end_idx]
             spo2_win = spo2_resampled[start_idx:end_idx]
+            thorax_win = thorax_resampled[start_idx:end_idx]
             
-            feature = np.stack([flow_win, spo2_win], axis=1)
+            feature = np.stack([flow_win, spo2_win, thorax_win], axis=1)
             X.append(feature)
-            
-            label = 1 if etype in ['OBSTR', 'CNTRL', 'MIXED'] else 2
             y.append(label)
             
             used_indices.update(range(start_idx, end_idx))
@@ -101,8 +124,9 @@ def process_patient(edf_path, events_path, window_sec=60, fs=10):
         if not overlap:
             flow_win = flow_resampled[start_idx:end_idx]
             spo2_win = spo2_resampled[start_idx:end_idx]
+            thorax_win = thorax_resampled[start_idx:end_idx]
             
-            feature = np.stack([flow_win, spo2_win], axis=1)
+            feature = np.stack([flow_win, spo2_win, thorax_win], axis=1)
             X.append(feature)
             y.append(0)
             normals_extracted += 1
@@ -111,49 +135,78 @@ def process_patient(edf_path, events_path, window_sec=60, fs=10):
     return np.array(X), np.array(y)
 
 def main():
-    raw_dir = '../data/raw/'
-    processed_dir = '../data/processed/'
+    # Use absolute paths relative to the script location
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    project_root = os.path.dirname(script_dir)
+    raw_dir = os.path.join(project_root, 'data', 'raw')
+    processed_dir = os.path.join(project_root, 'data', 'processed')
     os.makedirs(processed_dir, exist_ok=True)
     
     all_X = []
     all_y = []
     
-    patient_folders = glob.glob(os.path.join(raw_dir, 'patient_*'))
-    print(f"Found {len(patient_folders)} patient(s): {patient_folders}")
+    patient_folders = sorted(glob.glob(os.path.join(raw_dir, 'patient_*')))
+    print(f"Found {len(patient_folders)} patient(s)")
     
-    for p_dir in patient_folders:
+    train_folders, test_folders = train_test_split(patient_folders, test_size=0.2, random_state=42)
+    print(f"Train patients: {[os.path.basename(p) for p in train_folders]}")
+    print(f"Test patients: {[os.path.basename(p) for p in test_folders]}")
+    
+    # Pass 1: Compute global normalization stats from training cohort
+    print("\n--- Computing global normalization stats (Pass 1) ---")
+    train_flows = []
+    train_spo2s = []
+    train_thoraxs = []
+    
+    for p_dir in train_folders:
         edf_file = os.path.join(p_dir, 'recording.edf')
-        events_file = os.path.join(p_dir, 'events.json')
-        
-        if not os.path.exists(edf_file) or not os.path.exists(events_file):
-            print(f"Skipping {p_dir}: Missing recording.edf or events.json")
-            continue
-            
-        print(f"\n--- Processing {p_dir} ---")
+        if not os.path.exists(edf_file): continue
         try:
-            X, y = process_patient(edf_file, events_file)
-            print(f"Extracted X={X.shape}, y={y.shape}")
-            all_X.append(X)
-            all_y.append(y)
+            flow, spo2, thorax = process_patient(edf_file, None, norm_stats=None)
+            train_flows.append(flow)
+            train_spo2s.append(spo2)
+            train_thoraxs.append(thorax)
         except Exception as e:
-            print(f"Error processing {p_dir}: {e}")
-        
-    if not all_X:
-        print("No valid data found.")
-        return
-        
-    X_combined = np.concatenate(all_X, axis=0)
-    y_combined = np.concatenate(all_y, axis=0)
+            print(f"Error in Pass 1 for {p_dir}: {e}")
+            
+    norm_stats = {
+        'flow': {'mean': float(np.mean(np.concatenate(train_flows))), 'std': float(np.std(np.concatenate(train_flows)))},
+        'spo2': {'mean': float(np.mean(np.concatenate(train_spo2s))), 'std': float(np.std(np.concatenate(train_spo2s)))},
+        'thorax': {'mean': float(np.mean(np.concatenate(train_thoraxs))), 'std': float(np.std(np.concatenate(train_thoraxs)))}
+    }
     
-    print(f"\n=== Combined Dataset ===")
-    print(f"Dataset shape: X={X_combined.shape}, y={y_combined.shape}")
-    print(f"Class distribution: {np.bincount(y_combined)} (0: Normal, 1: Apnea, 2: Hypopnea)")
+    stats_file = os.path.join(processed_dir, 'norm_stats.json')
+    with open(stats_file, 'w') as f:
+        json.dump(norm_stats, f, indent=4)
+    print(f"Saved norm stats to {stats_file}")
     
-    X_train, X_test, y_train, y_test = train_test_split(X_combined, y_combined, test_size=0.2, random_state=42, stratify=y_combined)
+    # Pass 2: Extract windows using global stats
+    def extract_from_list(folders, name):
+        print(f"\n--- Extracting {name} set (Pass 2) ---")
+        Xs, ys = [], []
+        for p_dir in folders:
+            edf_file = os.path.join(p_dir, 'recording.edf')
+            events_file = os.path.join(p_dir, 'events.json')
+            if not os.path.exists(edf_file) or not os.path.exists(events_file): continue
+            try:
+                X, y = process_patient(edf_file, events_file, norm_stats=norm_stats)
+                Xs.append(X)
+                ys.append(y)
+                print(f"{os.path.basename(p_dir)}: {len(y)} windows")
+            except Exception as e:
+                print(f"Error in Pass 2 for {p_dir}: {e}")
+        return np.concatenate(Xs, axis=0), np.concatenate(ys, axis=0)
+    
+    X_train, y_train = extract_from_list(train_folders, 'train')
+    X_test, y_test = extract_from_list(test_folders, 'test')
+    
+    print(f"\n=== Dataset Summary ===")
+    print(f"X_train: {X_train.shape}, y_train classes: {np.bincount(y_train)}")
+    print(f"X_test: {X_test.shape}, y_test classes: {np.bincount(y_test)}")
     
     out_file = os.path.join(processed_dir, 'combined_dataset.npz')
     np.savez(out_file, X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
-    print(f"Saved dataset successfully to {out_file}")
+    print(f"Saved dataset to {out_file}")
 
 if __name__ == '__main__':
     main()

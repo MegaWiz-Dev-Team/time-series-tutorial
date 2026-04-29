@@ -2,12 +2,12 @@ import mlx.core as mx
 import mlx.nn as nn
 
 class SleepApneaCNN(nn.Module):
-    def __init__(self, num_classes=3):
+    def __init__(self, num_classes=5):
         super().__init__()
-        # Input shape expected: (batch, time_steps, channels) -> (batch, 600, 2)
+        # Input shape expected: (batch, time_steps, channels) -> (batch, 600, 3)
         
         # 1st Conv block
-        self.conv1 = nn.Conv1d(in_channels=2, out_channels=16, kernel_size=5, stride=2, padding=2)
+        self.conv1 = nn.Conv1d(in_channels=3, out_channels=16, kernel_size=5, stride=2, padding=2)
         self.bn1 = nn.BatchNorm(16)
         self.relu1 = nn.ReLU()
         
