@@ -1,0 +1,5963 @@
+{
+  "report": {
+    "recording_duration_hours": 6.552777777777778,
+    "valid_duration_hours": 6.2572222222222225,
+    "sqi_flow": 1.0,
+    "sqi_spo2": 0.9562950402713014,
+    "sqi_pulse": 0.9555320050869013,
+    "ahi": 45.866998135487876,
+    "ahi_supine": 52.97542043984476,
+    "ahi_non_supine": 33.68383532347175,
+    "odi": 27.648051140903842,
+    "mean_spo2": 92.16915643423911,
+    "min_spo2": 70.0,
+    "t90": 21.09136043264329,
+    "t88": 15.962586994104349,
+    "obstructive_apnea_count": 214,
+    "central_apnea_count": 35,
+    "mixed_apnea_count": 17,
+    "unclassified_apnea_count": 0,
+    "hypopnea_count": 21,
+    "desaturation_count": 173,
+    "csr_duration_min": -0.0,
+    "snore_count": 240,
+    "total_ahi_events": 287,
+    "position_time_min": {
+      "Left": 22.4,
+      "Unknown": 25.65,
+      "Right": 48.083333333333336,
+      "Upright": 2.6666666666666665,
+      "Supine": 206.13333333333333,
+      "Prone": 88.23333333333333
+    },
+    "osa_severity": "Severe",
+    "positional_osa": false
+  },
+  "events": [
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 0.0,
+      "end_sec": 4.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 0.0,
+      "end_sec": 12.9,
+      "duration_sec": 12.9,
+      "position": "Unknown",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7.0,
+      "end_sec": 14.0,
+      "duration_sec": 7.0,
+      "position": "Unknown",
+      "spo2_nadir": 93.0,
+      "spo2_drop": 3.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 173.75,
+      "end_sec": 184.66,
+      "duration_sec": 10.909999999999997,
+      "position": "Left",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 185.16,
+      "end_sec": 228.72,
+      "duration_sec": 43.56,
+      "position": "Left",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 214.0,
+      "end_sec": 221.0,
+      "duration_sec": 7.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 238.0,
+      "end_sec": 241.0,
+      "duration_sec": 3.0,
+      "position": "Left",
+      "spo2_nadir": 92.0,
+      "spo2_drop": 3.5087719298245617
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 265.26,
+      "end_sec": 303.31,
+      "duration_sec": 38.05000000000001,
+      "position": "Left",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 305.37,
+      "end_sec": 316.52,
+      "duration_sec": 11.149999999999977,
+      "position": "Left",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 471.91,
+      "end_sec": 482.06,
+      "duration_sec": 10.149999999999977,
+      "position": "Left",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 537.22,
+      "end_sec": 551.38,
+      "duration_sec": 14.159999999999968,
+      "position": "Left",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 569.75,
+      "end_sec": 591.47,
+      "duration_sec": 21.720000000000027,
+      "position": "Left",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 605.0,
+      "end_sec": 619.0,
+      "duration_sec": 14.0,
+      "position": "Prone",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 7.586776859504127
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 614.13,
+      "end_sec": 630.13,
+      "duration_sec": 16.0,
+      "position": "Prone",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 637.47,
+      "end_sec": 657.84,
+      "duration_sec": 20.370000000000005,
+      "position": "Prone",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 668.78,
+      "end_sec": 693.29,
+      "duration_sec": 24.50999999999999,
+      "position": "Prone",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 674.0,
+      "end_sec": 683.0,
+      "duration_sec": 9.0,
+      "position": "Prone",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 4.9669421487603245
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 718.0,
+      "end_sec": 720.0,
+      "duration_sec": 2.0,
+      "position": "Prone",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 3.3801652892561975
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 718.65,
+      "end_sec": 729.46,
+      "duration_sec": 10.81000000000006,
+      "position": "Prone",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 762.38,
+      "end_sec": 778.77,
+      "duration_sec": 16.389999999999986,
+      "position": "Prone",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 788.0,
+      "end_sec": 804.0,
+      "duration_sec": 16.0,
+      "position": "Prone",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 5.1983471074380105
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 801.19,
+      "end_sec": 849.62,
+      "duration_sec": 48.42999999999995,
+      "position": "Prone",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 963.27,
+      "end_sec": 981.69,
+      "duration_sec": 18.420000000000073,
+      "position": "Prone",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 982.02,
+      "end_sec": 994.03,
+      "duration_sec": 12.009999999999991,
+      "position": "Prone",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1057.19,
+      "end_sec": 1085.84,
+      "duration_sec": 28.649999999999864,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1129.13,
+      "end_sec": 1165.49,
+      "duration_sec": 36.3599999999999,
+      "position": "Prone",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1224.23,
+      "end_sec": 1263.78,
+      "duration_sec": 39.549999999999955,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1330.34,
+      "end_sec": 1383.07,
+      "duration_sec": 52.73000000000002,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1404.87,
+      "end_sec": 1496.13,
+      "duration_sec": 91.26000000000022,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1551.17,
+      "end_sec": 1577.2,
+      "duration_sec": 26.029999999999973,
+      "position": "Left",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1555.0,
+      "end_sec": 1557.0,
+      "duration_sec": 2.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1599.46,
+      "end_sec": 1615.86,
+      "duration_sec": 16.399999999999864,
+      "position": "Left",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 1638.88,
+      "end_sec": 1652.79,
+      "duration_sec": 13.909999999999854,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1639.0,
+      "end_sec": 1642.0,
+      "duration_sec": 3.0,
+      "position": "Supine",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 3.694214876033058
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 1657.84,
+      "end_sec": 1686.37,
+      "duration_sec": 28.529999999999973,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1691.0,
+      "end_sec": 1710.0,
+      "duration_sec": 19.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 8.586776859504127
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 1711.52,
+      "end_sec": 1733.29,
+      "duration_sec": 21.769999999999982,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 1749.88,
+      "end_sec": 1776.55,
+      "duration_sec": 26.669999999999845,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1751.0,
+      "end_sec": 1760.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 6.140495867768593
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1779.0,
+      "end_sec": 1781.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1784.0,
+      "end_sec": 1785.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1788.0,
+      "end_sec": 1790.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 1790.19,
+      "end_sec": 1817.79,
+      "duration_sec": 27.59999999999991,
+      "position": "Supine",
+      "spo2_nadir": 81.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1791.0,
+      "end_sec": 1800.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 8.561983471074385
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1821.0,
+      "end_sec": 1823.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1826.17,
+      "end_sec": 1864.13,
+      "duration_sec": 37.960000000000036,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1831.0,
+      "end_sec": 1840.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 8.68595041322314
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1870.0,
+      "end_sec": 1872.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 3.289256198347104
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1881.0,
+      "end_sec": 1891.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 9.429752066115697
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1881.83,
+      "end_sec": 1914.2,
+      "duration_sec": 32.37000000000012,
+      "position": "Supine",
+      "spo2_nadir": 70.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1923.0,
+      "end_sec": 1943.0,
+      "duration_sec": 20.0,
+      "position": "Supine",
+      "spo2_nadir": 70.0,
+      "spo2_drop": 17.380165289256198
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 1925.95,
+      "end_sec": 1957.05,
+      "duration_sec": 31.09999999999991,
+      "position": "Supine",
+      "spo2_nadir": 70.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1959.0,
+      "end_sec": 1960.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 1962.0,
+      "end_sec": 1964.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 1969.4,
+      "end_sec": 2010.05,
+      "duration_sec": 40.649999999999864,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 1975.0,
+      "end_sec": 1983.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 10.735537190082638
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2009.0,
+      "end_sec": 2010.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2014.0,
+      "end_sec": 2039.0,
+      "duration_sec": 25.0,
+      "position": "Right",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 13.388429752066116
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 2049.78,
+      "end_sec": 2063.71,
+      "duration_sec": 13.929999999999836,
+      "position": "Right",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2080.0,
+      "end_sec": 2082.0,
+      "duration_sec": 2.0,
+      "position": "Right",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 3.0330578512396755
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 2094.56,
+      "end_sec": 2108.65,
+      "duration_sec": 14.090000000000146,
+      "position": "Right",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2128.46,
+      "end_sec": 2149.52,
+      "duration_sec": 21.059999999999945,
+      "position": "Supine",
+      "spo2_nadir": 82.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2148.0,
+      "end_sec": 2149.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2156.0,
+      "end_sec": 2158.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2161.86,
+      "end_sec": 2192.51,
+      "duration_sec": 30.65000000000009,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2168.0,
+      "end_sec": 2177.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 82.0,
+      "spo2_drop": 7.983471074380162
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2191.0,
+      "end_sec": 2193.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2194.0,
+      "end_sec": 2196.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2201.0,
+      "end_sec": 2218.0,
+      "duration_sec": 17.0,
+      "position": "Supine",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 10.603305785123965
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2202.74,
+      "end_sec": 2232.53,
+      "duration_sec": 29.79000000000042,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2206.0,
+      "end_sec": 2207.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2231.0,
+      "end_sec": 2233.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2243.4,
+      "end_sec": 2275.01,
+      "duration_sec": 31.610000000000127,
+      "position": "Supine",
+      "spo2_nadir": 82.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2253.0,
+      "end_sec": 2259.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 5.735537190082638
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2274.0,
+      "end_sec": 2276.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2289.91,
+      "end_sec": 2319.28,
+      "duration_sec": 29.370000000000346,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2290.0,
+      "end_sec": 2299.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 82.0,
+      "spo2_drop": 6.900826446280988
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2318.0,
+      "end_sec": 2319.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2325.0,
+      "end_sec": 2346.0,
+      "duration_sec": 21.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 11.826446280991732
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2326.41,
+      "end_sec": 2361.09,
+      "duration_sec": 34.68000000000029,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2329.0,
+      "end_sec": 2330.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2369.9,
+      "end_sec": 2401.98,
+      "duration_sec": 32.07999999999993,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2380.0,
+      "end_sec": 2387.0,
+      "duration_sec": 7.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 6.247933884297524
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2401.0,
+      "end_sec": 2403.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2409.0,
+      "end_sec": 2428.0,
+      "duration_sec": 19.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 11.471074380165291
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2414.43,
+      "end_sec": 2444.93,
+      "duration_sec": 30.5,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2444.0,
+      "end_sec": 2446.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2450.0,
+      "end_sec": 2451.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2452.0,
+      "end_sec": 2454.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 3.1404958677685926
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2452.68,
+      "end_sec": 2492.58,
+      "duration_sec": 39.90000000000009,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2455.0,
+      "end_sec": 2456.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2456.0,
+      "end_sec": 2473.0,
+      "duration_sec": 17.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 9.63636363636364
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2498.85,
+      "end_sec": 2538.47,
+      "duration_sec": 39.61999999999989,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2510.0,
+      "end_sec": 2519.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 7.47933884297521
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2538.0,
+      "end_sec": 2540.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2548.1,
+      "end_sec": 2574.37,
+      "duration_sec": 26.269999999999982,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2549.0,
+      "end_sec": 2568.0,
+      "duration_sec": 19.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 9.694214876033058
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2573.0,
+      "end_sec": 2576.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2582.0,
+      "end_sec": 2585.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2584.09,
+      "end_sec": 2613.72,
+      "duration_sec": 29.629999999999654,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2592.0,
+      "end_sec": 2598.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 4.63636363636364
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2613.0,
+      "end_sec": 2615.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2622.82,
+      "end_sec": 2647.48,
+      "duration_sec": 24.659999999999854,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2626.0,
+      "end_sec": 2638.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 5.710743801652896
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2645.0,
+      "end_sec": 2646.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2651.69,
+      "end_sec": 2679.6,
+      "duration_sec": 27.909999999999854,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2685.0,
+      "end_sec": 2707.0,
+      "duration_sec": 22.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 9.297520661157023
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2690.74,
+      "end_sec": 2725.98,
+      "duration_sec": 35.24000000000024,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2734.0,
+      "end_sec": 2758.0,
+      "duration_sec": 24.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 7.15702479338843
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2738.95,
+      "end_sec": 2771.75,
+      "duration_sec": 32.80000000000018,
+      "position": "Supine",
+      "spo2_nadir": 81.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2780.49,
+      "end_sec": 2814.05,
+      "duration_sec": 33.5600000000004,
+      "position": "Supine",
+      "spo2_nadir": 82.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2791.0,
+      "end_sec": 2798.0,
+      "duration_sec": 7.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 4.63636363636364
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2821.0,
+      "end_sec": 2852.54,
+      "duration_sec": 31.539999999999964,
+      "position": "Supine",
+      "spo2_nadir": 82.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2826.0,
+      "end_sec": 2842.0,
+      "duration_sec": 16.0,
+      "position": "Supine",
+      "spo2_nadir": 82.0,
+      "spo2_drop": 8.694214876033058
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2866.7,
+      "end_sec": 2892.27,
+      "duration_sec": 25.570000000000164,
+      "position": "Supine",
+      "spo2_nadir": 81.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2905.51,
+      "end_sec": 2933.18,
+      "duration_sec": 27.669999999999618,
+      "position": "Supine",
+      "spo2_nadir": 81.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2908.0,
+      "end_sec": 2918.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 10.578512396694208
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2942.91,
+      "end_sec": 2978.19,
+      "duration_sec": 35.2800000000002,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2943.0,
+      "end_sec": 2959.0,
+      "duration_sec": 16.0,
+      "position": "Supine",
+      "spo2_nadir": 82.0,
+      "spo2_drop": 8.289256198347104
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2982.0,
+      "end_sec": 2984.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2986.0,
+      "end_sec": 2988.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 2989.09,
+      "end_sec": 3022.66,
+      "duration_sec": 33.56999999999971,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 2991.0,
+      "end_sec": 2994.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 2993.0,
+      "end_sec": 3005.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 9.64462809917356
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3017.0,
+      "end_sec": 3018.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3020.0,
+      "end_sec": 3023.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3026.58,
+      "end_sec": 3060.28,
+      "duration_sec": 33.70000000000027,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3040.0,
+      "end_sec": 3043.0,
+      "duration_sec": 3.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 4.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3059.0,
+      "end_sec": 3060.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3064.05,
+      "end_sec": 3099.22,
+      "duration_sec": 35.16999999999962,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3070.0,
+      "end_sec": 3088.0,
+      "duration_sec": 18.0,
+      "position": "Supine",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 10.272727272727266
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3111.54,
+      "end_sec": 3139.58,
+      "duration_sec": 28.039999999999964,
+      "position": "Supine",
+      "spo2_nadir": 81.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3116.0,
+      "end_sec": 3124.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 8.033057851239676
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3138.0,
+      "end_sec": 3141.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3144.0,
+      "end_sec": 3146.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3149.62,
+      "end_sec": 3187.18,
+      "duration_sec": 37.559999999999945,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3153.0,
+      "end_sec": 3154.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3160.0,
+      "end_sec": 3166.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 6.2649572649572605
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3193.24,
+      "end_sec": 3230.25,
+      "duration_sec": 37.01000000000022,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 3201.0,
+      "end_sec": 3205.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3207.0,
+      "end_sec": 3215.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 8.914529914529908
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3237.0,
+      "end_sec": 3238.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 3244.09,
+      "end_sec": 3276.05,
+      "duration_sec": 31.960000000000036,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3248.0,
+      "end_sec": 3258.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 8.470085470085465
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3274.0,
+      "end_sec": 3277.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3282.91,
+      "end_sec": 3318.61,
+      "duration_sec": 35.70000000000027,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3293.0,
+      "end_sec": 3303.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 9.776859504132233
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3317.0,
+      "end_sec": 3320.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3326.12,
+      "end_sec": 3363.18,
+      "duration_sec": 37.059999999999945,
+      "position": "Supine",
+      "spo2_nadir": 73.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3338.0,
+      "end_sec": 3347.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 7.446280991735534
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3362.0,
+      "end_sec": 3364.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3370.0,
+      "end_sec": 3371.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3372.99,
+      "end_sec": 3405.39,
+      "duration_sec": 32.40000000000009,
+      "position": "Supine",
+      "spo2_nadir": 73.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3374.0,
+      "end_sec": 3391.0,
+      "duration_sec": 17.0,
+      "position": "Supine",
+      "spo2_nadir": 73.0,
+      "spo2_drop": 12.826446280991732
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3404.0,
+      "end_sec": 3406.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3415.67,
+      "end_sec": 3447.59,
+      "duration_sec": 31.920000000000073,
+      "position": "Supine",
+      "spo2_nadir": 75.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3426.0,
+      "end_sec": 3431.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 4.900826446280988
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3446.0,
+      "end_sec": 3447.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3453.81,
+      "end_sec": 3487.47,
+      "duration_sec": 33.659999999999854,
+      "position": "Supine",
+      "spo2_nadir": 75.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3456.0,
+      "end_sec": 3458.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3463.0,
+      "end_sec": 3477.0,
+      "duration_sec": 14.0,
+      "position": "Supine",
+      "spo2_nadir": 75.0,
+      "spo2_drop": 11.966942148760324
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3486.0,
+      "end_sec": 3488.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3490.0,
+      "end_sec": 3492.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3493.0,
+      "end_sec": 3495.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3494.44,
+      "end_sec": 3527.51,
+      "duration_sec": 33.070000000000164,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3496.0,
+      "end_sec": 3497.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3506.0,
+      "end_sec": 3514.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 8.859504132231407
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3526.0,
+      "end_sec": 3529.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3539.07,
+      "end_sec": 3573.51,
+      "duration_sec": 34.440000000000055,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3549.0,
+      "end_sec": 3557.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 7.32231404958678
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3572.0,
+      "end_sec": 3577.0,
+      "duration_sec": 5.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3579.0,
+      "end_sec": 3580.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3583.39,
+      "end_sec": 3618.72,
+      "duration_sec": 35.32999999999993,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3592.0,
+      "end_sec": 3602.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 10.80165289256199
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3616.0,
+      "end_sec": 3617.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3626.05,
+      "end_sec": 3656.58,
+      "duration_sec": 30.529999999999745,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3634.0,
+      "end_sec": 3646.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 10.809917355371894
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3655.0,
+      "end_sec": 3656.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3658.0,
+      "end_sec": 3660.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3667.16,
+      "end_sec": 3703.13,
+      "duration_sec": 35.970000000000255,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3679.0,
+      "end_sec": 3685.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 6.4380165289256155
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3703.0,
+      "end_sec": 3705.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3707.0,
+      "end_sec": 3708.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3713.5,
+      "end_sec": 3751.68,
+      "duration_sec": 38.179999999999836,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3720.0,
+      "end_sec": 3734.0,
+      "duration_sec": 14.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 8.140495867768593
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3762.05,
+      "end_sec": 3796.28,
+      "duration_sec": 34.23000000000002,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3763.0,
+      "end_sec": 3765.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 3.1322314049586737
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3765.0,
+      "end_sec": 3767.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3766.0,
+      "end_sec": 3779.0,
+      "duration_sec": 13.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 9.95867768595042
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3795.0,
+      "end_sec": 3798.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3801.79,
+      "end_sec": 3842.12,
+      "duration_sec": 40.32999999999993,
+      "position": "Supine",
+      "spo2_nadir": 75.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3805.0,
+      "end_sec": 3808.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3817.0,
+      "end_sec": 3826.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 8.528925619834709
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3841.0,
+      "end_sec": 3844.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3847.0,
+      "end_sec": 3849.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 3856.25,
+      "end_sec": 3887.83,
+      "duration_sec": 31.579999999999927,
+      "position": "Supine",
+      "spo2_nadir": 75.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3857.0,
+      "end_sec": 3875.0,
+      "duration_sec": 18.0,
+      "position": "Supine",
+      "spo2_nadir": 75.0,
+      "spo2_drop": 10.917355371900825
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3886.0,
+      "end_sec": 3887.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3891.0,
+      "end_sec": 3892.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3893.0,
+      "end_sec": 3894.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3895.22,
+      "end_sec": 3935.73,
+      "duration_sec": 40.51000000000022,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3897.0,
+      "end_sec": 3900.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3903.0,
+      "end_sec": 3913.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 8.132231404958674
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3934.0,
+      "end_sec": 3937.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3943.26,
+      "end_sec": 3979.03,
+      "duration_sec": 35.76999999999998,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3953.0,
+      "end_sec": 3966.0,
+      "duration_sec": 13.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 8.619834710743802
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 3978.0,
+      "end_sec": 3983.0,
+      "duration_sec": 5.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 3990.19,
+      "end_sec": 4024.68,
+      "duration_sec": 34.48999999999978,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 3994.0,
+      "end_sec": 4008.0,
+      "duration_sec": 14.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 10.049586776859499
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4037.06,
+      "end_sec": 4065.31,
+      "duration_sec": 28.25,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4041.0,
+      "end_sec": 4053.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 9.049586776859499
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4064.0,
+      "end_sec": 4067.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4077.7,
+      "end_sec": 4108.53,
+      "duration_sec": 30.829999999999927,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4082.0,
+      "end_sec": 4095.0,
+      "duration_sec": 13.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 8.297520661157023
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4107.0,
+      "end_sec": 4110.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4120.84,
+      "end_sec": 4153.08,
+      "duration_sec": 32.23999999999978,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4126.0,
+      "end_sec": 4138.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 9.389830508474574
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4152.0,
+      "end_sec": 4155.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4157.0,
+      "end_sec": 4159.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4162.05,
+      "end_sec": 4198.89,
+      "duration_sec": 36.840000000000146,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 4165.0,
+      "end_sec": 4168.0,
+      "duration_sec": 3.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4175.0,
+      "end_sec": 4183.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 6.771186440677965
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4198.0,
+      "end_sec": 4201.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4205.92,
+      "end_sec": 4245.68,
+      "duration_sec": 39.76000000000022,
+      "position": "Supine",
+      "spo2_nadir": 77.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4209.0,
+      "end_sec": 4210.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4210.0,
+      "end_sec": 4226.0,
+      "duration_sec": 16.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 11.093220338983045
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4244.0,
+      "end_sec": 4247.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4255.1,
+      "end_sec": 4287.12,
+      "duration_sec": 32.01999999999953,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4264.0,
+      "end_sec": 4275.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 9.31404958677686
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4286.0,
+      "end_sec": 4288.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4291.0,
+      "end_sec": 4293.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4299.0,
+      "end_sec": 4300.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4301.49,
+      "end_sec": 4331.6,
+      "duration_sec": 30.110000000000582,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4304.0,
+      "end_sec": 4316.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 9.561983471074385
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4340.02,
+      "end_sec": 4376.42,
+      "duration_sec": 36.399999999999636,
+      "position": "Supine",
+      "spo2_nadir": 74.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4347.0,
+      "end_sec": 4361.0,
+      "duration_sec": 14.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 7.917355371900825
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4382.0,
+      "end_sec": 4422.1,
+      "duration_sec": 40.100000000000364,
+      "position": "Supine",
+      "spo2_nadir": 74.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4389.0,
+      "end_sec": 4407.0,
+      "duration_sec": 18.0,
+      "position": "Supine",
+      "spo2_nadir": 74.0,
+      "spo2_drop": 11.661157024793383
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4422.0,
+      "end_sec": 4423.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4429.0,
+      "end_sec": 4431.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 4435.8,
+      "end_sec": 4464.37,
+      "duration_sec": 28.56999999999971,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4442.0,
+      "end_sec": 4452.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 7.933884297520663
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4463.0,
+      "end_sec": 4466.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4470.0,
+      "end_sec": 4471.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4477.76,
+      "end_sec": 4504.09,
+      "duration_sec": 26.329999999999927,
+      "position": "Supine",
+      "spo2_nadir": 74.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4484.0,
+      "end_sec": 4492.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 7.15789473684211
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4503.0,
+      "end_sec": 4505.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 4509.0,
+      "end_sec": 4510.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 4514.0,
+      "end_sec": 4527.0,
+      "duration_sec": 13.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4515.04,
+      "end_sec": 4561.42,
+      "duration_sec": 46.38000000000011,
+      "position": "Unknown",
+      "spo2_nadir": 74.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 4521.0,
+      "end_sec": 4531.0,
+      "duration_sec": 10.0,
+      "position": "Unknown",
+      "spo2_nadir": 74.0,
+      "spo2_drop": 13.763157894736835
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 4742.0,
+      "end_sec": 4744.0,
+      "duration_sec": 2.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 4881.0,
+      "end_sec": 4883.0,
+      "duration_sec": 2.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 4918.0,
+      "end_sec": 4924.0,
+      "duration_sec": 6.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 4928.2,
+      "end_sec": 4951.73,
+      "duration_sec": 23.529999999999745,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 4972.72,
+      "end_sec": 4986.87,
+      "duration_sec": 14.149999999999636,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5035.0,
+      "end_sec": 5036.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5076.0,
+      "end_sec": 5078.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5283.4,
+      "end_sec": 5294.69,
+      "duration_sec": 11.289999999999964,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5298.0,
+      "end_sec": 5299.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5301.0,
+      "end_sec": 5303.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5306.0,
+      "end_sec": 5308.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5308.0,
+      "end_sec": 5311.0,
+      "duration_sec": 3.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5327.56,
+      "end_sec": 5345.13,
+      "duration_sec": 17.56999999999971,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5427.0,
+      "end_sec": 5428.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5433.0,
+      "end_sec": 5440.0,
+      "duration_sec": 7.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5462.11,
+      "end_sec": 5474.61,
+      "duration_sec": 12.5,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5488.0,
+      "end_sec": 5492.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5497.73,
+      "end_sec": 5517.68,
+      "duration_sec": 19.950000000000728,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5521.0,
+      "end_sec": 5522.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5523.0,
+      "end_sec": 5536.0,
+      "duration_sec": 13.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5526.0,
+      "end_sec": 5529.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5539.0,
+      "end_sec": 5540.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5593.2,
+      "end_sec": 5652.06,
+      "duration_sec": 58.86000000000058,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5615.0,
+      "end_sec": 5625.0,
+      "duration_sec": 10.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5638.0,
+      "end_sec": 5643.0,
+      "duration_sec": 5.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5651.0,
+      "end_sec": 5652.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5659.65,
+      "end_sec": 5691.46,
+      "duration_sec": 31.8100000000004,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5663.0,
+      "end_sec": 5677.0,
+      "duration_sec": 14.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5699.0,
+      "end_sec": 5713.0,
+      "duration_sec": 14.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5700.71,
+      "end_sec": 5737.83,
+      "duration_sec": 37.11999999999989,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5742.0,
+      "end_sec": 5745.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5746.0,
+      "end_sec": 5757.0,
+      "duration_sec": 11.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5747.58,
+      "end_sec": 5783.09,
+      "duration_sec": 35.51000000000022,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5782.0,
+      "end_sec": 5784.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5788.0,
+      "end_sec": 5789.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5792.0,
+      "end_sec": 5799.0,
+      "duration_sec": 7.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5793.0,
+      "end_sec": 5795.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5801.04,
+      "end_sec": 5821.39,
+      "duration_sec": 20.350000000000364,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5821.0,
+      "end_sec": 5822.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5831.45,
+      "end_sec": 5847.76,
+      "duration_sec": 16.3100000000004,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5874.0,
+      "end_sec": 5880.0,
+      "duration_sec": 6.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5966.0,
+      "end_sec": 5968.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 5970.0,
+      "end_sec": 5980.0,
+      "duration_sec": 10.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5971.0,
+      "end_sec": 5973.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 5976.0,
+      "end_sec": 5978.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 5982.59,
+      "end_sec": 6043.48,
+      "duration_sec": 60.88999999999942,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6010.0,
+      "end_sec": 6012.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6013.0,
+      "end_sec": 6016.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 6017.0,
+      "end_sec": 6025.0,
+      "duration_sec": 8.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 6029.0,
+      "end_sec": 6065.0,
+      "duration_sec": 36.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 3.0111111111111057
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 6042.0,
+      "end_sec": 6046.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6042.0,
+      "end_sec": 6045.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6049.0,
+      "end_sec": 6050.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 6056.0,
+      "end_sec": 6066.0,
+      "duration_sec": 10.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 6065.44,
+      "end_sec": 6085.53,
+      "duration_sec": 20.090000000000146,
+      "position": "Supine",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 6101.9,
+      "end_sec": 6131.16,
+      "duration_sec": 29.26000000000022,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6127.0,
+      "end_sec": 6128.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6161.0,
+      "end_sec": 6162.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6192.0,
+      "end_sec": 6194.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6206.0,
+      "end_sec": 6209.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6212.0,
+      "end_sec": 6213.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6225.0,
+      "end_sec": 6227.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6229.0,
+      "end_sec": 6231.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6241.0,
+      "end_sec": 6244.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6245.0,
+      "end_sec": 6248.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6250.0,
+      "end_sec": 6253.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6270.0,
+      "end_sec": 6272.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6292.0,
+      "end_sec": 6295.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6297.0,
+      "end_sec": 6299.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6302.0,
+      "end_sec": 6304.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6332.0,
+      "end_sec": 6333.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6344.0,
+      "end_sec": 6347.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6348.0,
+      "end_sec": 6350.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6393.0,
+      "end_sec": 6396.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 6395.66,
+      "end_sec": 6417.85,
+      "duration_sec": 22.19000000000051,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6397.0,
+      "end_sec": 6399.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 6415.0,
+      "end_sec": 6416.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 6424.49,
+      "end_sec": 6446.61,
+      "duration_sec": 22.11999999999989,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 6458.0,
+      "end_sec": 6473.0,
+      "duration_sec": 15.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 7.0330578512396755
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 6470.03,
+      "end_sec": 6490.45,
+      "duration_sec": 20.420000000000073,
+      "position": "Supine",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 6539.28,
+      "end_sec": 6559.34,
+      "duration_sec": 20.0600000000004,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 6545.0,
+      "end_sec": 6584.0,
+      "duration_sec": 39.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 6559.34,
+      "end_sec": 6592.42,
+      "duration_sec": 33.07999999999993,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 6577.0,
+      "end_sec": 6590.0,
+      "duration_sec": 13.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 4.7162162162162105
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 6620.0,
+      "end_sec": 6636.0,
+      "duration_sec": 16.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 6669.0,
+      "end_sec": 6683.0,
+      "duration_sec": 14.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 6711.0,
+      "end_sec": 6726.0,
+      "duration_sec": 15.0,
+      "position": "Supine",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 5.055045871559628
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 6766.0,
+      "end_sec": 6777.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.107438016528931
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7434.0,
+      "end_sec": 7439.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.867768595041326
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7544.0,
+      "end_sec": 7549.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.297520661157023
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7650.0,
+      "end_sec": 7654.0,
+      "duration_sec": 4.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.9669421487603245
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7696.0,
+      "end_sec": 7707.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 5.165289256198349
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7746.0,
+      "end_sec": 7756.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 9.756302521008408
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 7796.0,
+      "end_sec": 7798.0,
+      "duration_sec": 2.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7800.0,
+      "end_sec": 7809.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 7.235294117647058
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7831.0,
+      "end_sec": 7858.0,
+      "duration_sec": 27.0,
+      "position": "Supine",
+      "spo2_nadir": 75.0,
+      "spo2_drop": 13.025210084033617
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7896.0,
+      "end_sec": 7906.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 8.173553719008268
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 7957.0,
+      "end_sec": 7971.0,
+      "duration_sec": 14.0,
+      "position": "Supine",
+      "spo2_nadir": 77.0,
+      "spo2_drop": 13.082644628099175
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8010.0,
+      "end_sec": 8024.0,
+      "duration_sec": 14.0,
+      "position": "Supine",
+      "spo2_nadir": 73.0,
+      "spo2_drop": 16.21487603305785
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8019.28,
+      "end_sec": 8048.83,
+      "duration_sec": 29.550000000000182,
+      "position": "Supine",
+      "spo2_nadir": 74.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8049.54,
+      "end_sec": 8075.84,
+      "duration_sec": 26.300000000000182,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8083.0,
+      "end_sec": 8102.0,
+      "duration_sec": 19.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 10.247933884297524
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8089.22,
+      "end_sec": 8130.34,
+      "duration_sec": 41.11999999999989,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8137.0,
+      "end_sec": 8161.0,
+      "duration_sec": 24.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 11.057851239669418
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8142.41,
+      "end_sec": 8184.54,
+      "duration_sec": 42.13000000000011,
+      "position": "Supine",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8196.63,
+      "end_sec": 8274.03,
+      "duration_sec": 77.40000000000146,
+      "position": "Prone",
+      "spo2_nadir": 76.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8203.0,
+      "end_sec": 8217.0,
+      "duration_sec": 14.0,
+      "position": "Prone",
+      "spo2_nadir": 76.0,
+      "spo2_drop": 13.115702479338836
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8282.0,
+      "end_sec": 8302.0,
+      "duration_sec": 20.0,
+      "position": "Prone",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 6.892561983471069
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8292.68,
+      "end_sec": 8307.29,
+      "duration_sec": 14.610000000000582,
+      "position": "Prone",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8308.41,
+      "end_sec": 8323.25,
+      "duration_sec": 14.840000000000146,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 8337.92,
+      "end_sec": 8362.16,
+      "duration_sec": 24.23999999999978,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8379.74,
+      "end_sec": 8400.49,
+      "duration_sec": 20.75,
+      "position": "Prone",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8406.79,
+      "end_sec": 8432.57,
+      "duration_sec": 25.779999999998836,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8436.0,
+      "end_sec": 8461.0,
+      "duration_sec": 25.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 10.04132231404958
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8445.97,
+      "end_sec": 8466.92,
+      "duration_sec": 20.950000000000728,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8468.29,
+      "end_sec": 8485.49,
+      "duration_sec": 17.19999999999891,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8498.0,
+      "end_sec": 8513.0,
+      "duration_sec": 15.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 6.173553719008268
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8500.87,
+      "end_sec": 8547.16,
+      "duration_sec": 46.289999999999054,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8565.55,
+      "end_sec": 8616.18,
+      "duration_sec": 50.63000000000102,
+      "position": "Prone",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8569.0,
+      "end_sec": 8577.0,
+      "duration_sec": 8.0,
+      "position": "Prone",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 6.933884297520663
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8609.0,
+      "end_sec": 8634.0,
+      "duration_sec": 25.0,
+      "position": "Prone",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 5.413223140495873
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8633.21,
+      "end_sec": 8724.56,
+      "duration_sec": 91.35000000000036,
+      "position": "Prone",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8697.0,
+      "end_sec": 8710.0,
+      "duration_sec": 13.0,
+      "position": "Prone",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 3.6694214876033016
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8748.93,
+      "end_sec": 8775.8,
+      "duration_sec": 26.86999999999898,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8790.45,
+      "end_sec": 8810.72,
+      "duration_sec": 20.269999999998618,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8811.37,
+      "end_sec": 8849.8,
+      "duration_sec": 38.42999999999847,
+      "position": "Prone",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8872.0,
+      "end_sec": 8883.0,
+      "duration_sec": 11.0,
+      "position": "Prone",
+      "spo2_nadir": 92.0,
+      "spo2_drop": 3.630630630630634
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8891.41,
+      "end_sec": 8916.22,
+      "duration_sec": 24.80999999999949,
+      "position": "Prone",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 8923.0,
+      "end_sec": 8941.0,
+      "duration_sec": 18.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 8953.0,
+      "end_sec": 8955.0,
+      "duration_sec": 2.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.4752475247524757
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 8960.91,
+      "end_sec": 8987.42,
+      "duration_sec": 26.51000000000022,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 8991.0,
+      "end_sec": 8993.0,
+      "duration_sec": 2.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9008.0,
+      "end_sec": 9014.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 4.252100840336141
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 9047.52,
+      "end_sec": 9097.61,
+      "duration_sec": 50.090000000000146,
+      "position": "Supine",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 9121.96,
+      "end_sec": 9140.15,
+      "duration_sec": 18.19000000000051,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9154.0,
+      "end_sec": 9165.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 5.867768595041326
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 9156.75,
+      "end_sec": 9175.75,
+      "duration_sec": 19.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 9192.16,
+      "end_sec": 9213.54,
+      "duration_sec": 21.38000000000102,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 9231.34,
+      "end_sec": 9258.53,
+      "duration_sec": 27.19000000000051,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9234.0,
+      "end_sec": 9239.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.776859504132233
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9273.24,
+      "end_sec": 9302.6,
+      "duration_sec": 29.360000000000582,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9275.0,
+      "end_sec": 9286.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 5.67768595041322
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 9313.31,
+      "end_sec": 9347.35,
+      "duration_sec": 34.04000000000087,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9325.0,
+      "end_sec": 9329.0,
+      "duration_sec": 4.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 4.04132231404958
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9356.0,
+      "end_sec": 9368.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 4.289256198347104
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9362.28,
+      "end_sec": 9397.25,
+      "duration_sec": 34.969999999999345,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9371.0,
+      "end_sec": 9378.0,
+      "duration_sec": 7.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 5.016528925619838
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 9397.0,
+      "end_sec": 9399.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9404.0,
+      "end_sec": 9428.0,
+      "duration_sec": 24.0,
+      "position": "Supine",
+      "spo2_nadir": 78.0,
+      "spo2_drop": 9.743801652892557
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9414.09,
+      "end_sec": 9447.73,
+      "duration_sec": 33.63999999999942,
+      "position": "Supine",
+      "spo2_nadir": 78.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 9447.0,
+      "end_sec": 9448.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 9459.73,
+      "end_sec": 9493.23,
+      "duration_sec": 33.5,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9466.0,
+      "end_sec": 9477.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 7.024793388429757
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9505.0,
+      "end_sec": 9507.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 3.2066115702479294
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 9505.66,
+      "end_sec": 9539.41,
+      "duration_sec": 33.75,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9513.0,
+      "end_sec": 9522.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 5.8512396694214885
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9550.0,
+      "end_sec": 9558.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 3.6198347107438025
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9552.42,
+      "end_sec": 9590.28,
+      "duration_sec": 37.86000000000058,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9559.0,
+      "end_sec": 9571.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 7.9669421487603245
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9602.42,
+      "end_sec": 9635.58,
+      "duration_sec": 33.159999999999854,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9611.0,
+      "end_sec": 9619.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 7.066115702479337
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9646.0,
+      "end_sec": 9667.0,
+      "duration_sec": 21.0,
+      "position": "Supine",
+      "spo2_nadir": 80.0,
+      "spo2_drop": 7.826446280991732
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 9646.0,
+      "end_sec": 9648.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9648.29,
+      "end_sec": 9682.88,
+      "duration_sec": 34.58999999999833,
+      "position": "Supine",
+      "spo2_nadir": 80.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 9686.0,
+      "end_sec": 9688.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 9692.39,
+      "end_sec": 9732.98,
+      "duration_sec": 40.590000000000146,
+      "position": "Supine",
+      "spo2_nadir": 81.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9703.0,
+      "end_sec": 9713.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 8.008264462809919
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 9734.0,
+      "end_sec": 9735.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9749.41,
+      "end_sec": 9781.66,
+      "duration_sec": 32.25,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9760.0,
+      "end_sec": 9762.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 3.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 9781.0,
+      "end_sec": 9783.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9784.0,
+      "end_sec": 9814.0,
+      "duration_sec": 30.0,
+      "position": "Supine",
+      "spo2_nadir": 84.0,
+      "spo2_drop": 7.066115702479337
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 9801.49,
+      "end_sec": 9815.31,
+      "duration_sec": 13.819999999999709,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 9833.69,
+      "end_sec": 9850.3,
+      "duration_sec": 16.609999999998763,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 9865.0,
+      "end_sec": 9868.0,
+      "duration_sec": 3.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 3.355371900826441
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10378.79,
+      "end_sec": 10417.28,
+      "duration_sec": 38.48999999999978,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10432.2,
+      "end_sec": 10457.44,
+      "duration_sec": 25.23999999999978,
+      "position": "Supine",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 10483.0,
+      "end_sec": 10492.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 5.603305785123965
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10505.63,
+      "end_sec": 10519.68,
+      "duration_sec": 14.050000000001091,
+      "position": "Supine",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10568.84,
+      "end_sec": 10580.49,
+      "duration_sec": 11.649999999999636,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10581.34,
+      "end_sec": 10597.78,
+      "duration_sec": 16.44000000000051,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10610.21,
+      "end_sec": 10630.31,
+      "duration_sec": 20.100000000000364,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10641.51,
+      "end_sec": 10673.38,
+      "duration_sec": 31.86999999999898,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 10655.0,
+      "end_sec": 10658.0,
+      "duration_sec": 3.0,
+      "position": "Supine",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.247933884297524
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 10673.0,
+      "end_sec": 10675.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10686.24,
+      "end_sec": 10718.74,
+      "duration_sec": 32.5,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 10700.0,
+      "end_sec": 10706.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 4.545454545454547
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 10724.0,
+      "end_sec": 10726.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10735.72,
+      "end_sec": 10765.57,
+      "duration_sec": 29.850000000000364,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 10743.0,
+      "end_sec": 10748.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 4.6198347107438025
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 10789.21,
+      "end_sec": 10809.04,
+      "duration_sec": 19.830000000001746,
+      "position": "Right",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 10818.57,
+      "end_sec": 10835.68,
+      "duration_sec": 17.110000000000582,
+      "position": "Right",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 10819.0,
+      "end_sec": 10822.0,
+      "duration_sec": 3.0,
+      "position": "Right"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 10822.0,
+      "end_sec": 10833.0,
+      "duration_sec": 11.0,
+      "position": "Right",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 6.024793388429757
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 12075.86,
+      "end_sec": 12122.54,
+      "duration_sec": 46.68000000000029,
+      "position": "Right",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12150.0,
+      "end_sec": 12158.0,
+      "duration_sec": 8.0,
+      "position": "Right",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 7.123966942148755
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 12217.84,
+      "end_sec": 12243.54,
+      "duration_sec": 25.700000000000728,
+      "position": "Right",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12255.19,
+      "end_sec": 12271.59,
+      "duration_sec": 16.399999999999636,
+      "position": "Supine",
+      "spo2_nadir": 95.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12270.0,
+      "end_sec": 12272.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12285.0,
+      "end_sec": 12287.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12290.0,
+      "end_sec": 12292.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12296.53,
+      "end_sec": 12313.4,
+      "duration_sec": 16.86999999999898,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12312.0,
+      "end_sec": 12314.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12317.0,
+      "end_sec": 12319.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12320.71,
+      "end_sec": 12345.78,
+      "duration_sec": 25.070000000001528,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12360.0,
+      "end_sec": 12369.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 5.768595041322314
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12373.0,
+      "end_sec": 12375.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12420.0,
+      "end_sec": 12421.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12423.0,
+      "end_sec": 12425.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12427.0,
+      "end_sec": 12429.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12482.0,
+      "end_sec": 12483.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12486.0,
+      "end_sec": 12502.0,
+      "duration_sec": 16.0,
+      "position": "Supine",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 5.586776859504127
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12494.56,
+      "end_sec": 12553.35,
+      "duration_sec": 58.79000000000087,
+      "position": "Supine",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12560.31,
+      "end_sec": 12612.72,
+      "duration_sec": 52.409999999999854,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12569.0,
+      "end_sec": 12571.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 3.4380165289256155
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12611.0,
+      "end_sec": 12614.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12636.0,
+      "end_sec": 12647.0,
+      "duration_sec": 11.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 7.793388429752071
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12641.0,
+      "end_sec": 12642.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 12641.77,
+      "end_sec": 12652.46,
+      "duration_sec": 10.68999999999869,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12652.85,
+      "end_sec": 12678.19,
+      "duration_sec": 25.340000000000146,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12690.66,
+      "end_sec": 12714.01,
+      "duration_sec": 23.350000000000364,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12702.0,
+      "end_sec": 12714.0,
+      "duration_sec": 12.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 5.140495867768593
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 12740.32,
+      "end_sec": 12755.09,
+      "duration_sec": 14.770000000000437,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12816.43,
+      "end_sec": 12870.65,
+      "duration_sec": 54.219999999999345,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12870.0,
+      "end_sec": 12872.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12883.16,
+      "end_sec": 12905.5,
+      "duration_sec": 22.340000000000146,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12906.23,
+      "end_sec": 12942.58,
+      "duration_sec": 36.350000000000364,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12964.0,
+      "end_sec": 12967.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 12978.0,
+      "end_sec": 12980.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 12979.98,
+      "end_sec": 13022.11,
+      "duration_sec": 42.13000000000102,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 12983.0,
+      "end_sec": 12990.0,
+      "duration_sec": 7.0,
+      "position": "Supine",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.008264462809919
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13021.0,
+      "end_sec": 13024.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13025.0,
+      "end_sec": 13027.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13029.0,
+      "end_sec": 13031.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13043.71,
+      "end_sec": 13062.26,
+      "duration_sec": 18.55000000000109,
+      "position": "Supine",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13061.0,
+      "end_sec": 13063.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13083.0,
+      "end_sec": 13103.76,
+      "duration_sec": 20.76000000000022,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13117.0,
+      "end_sec": 13121.0,
+      "duration_sec": 4.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13118.96,
+      "end_sec": 13148.71,
+      "duration_sec": 29.75,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 13124.0,
+      "end_sec": 13126.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.0330578512396755
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13176.47,
+      "end_sec": 13202.25,
+      "duration_sec": 25.780000000000655,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13206.0,
+      "end_sec": 13208.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 13211.0,
+      "end_sec": 13212.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13220.49,
+      "end_sec": 13251.84,
+      "duration_sec": 31.350000000000364,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13272.94,
+      "end_sec": 13294.55,
+      "duration_sec": 21.609999999998763,
+      "position": "Prone",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 13306.0,
+      "end_sec": 13319.0,
+      "duration_sec": 13.0,
+      "position": "Prone",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 6.289256198347104
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13314.62,
+      "end_sec": 13332.67,
+      "duration_sec": 18.049999999999272,
+      "position": "Prone",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13364.99,
+      "end_sec": 13375.56,
+      "duration_sec": 10.569999999999709,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13474.0,
+      "end_sec": 13523.0,
+      "duration_sec": 49.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 13479.75,
+      "end_sec": 13499.55,
+      "duration_sec": 19.799999999999272,
+      "position": "Prone",
+      "spo2_nadir": 82.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 13523.0,
+      "end_sec": 13528.0,
+      "duration_sec": 5.0,
+      "position": "Prone",
+      "spo2_nadir": 82.0,
+      "spo2_drop": 3.603174603174608
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13573.0,
+      "end_sec": 13589.0,
+      "duration_sec": 16.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13628.0,
+      "end_sec": 13636.0,
+      "duration_sec": 8.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13703.0,
+      "end_sec": 13709.0,
+      "duration_sec": 6.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13729.0,
+      "end_sec": 13732.0,
+      "duration_sec": 3.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13748.0,
+      "end_sec": 13753.0,
+      "duration_sec": 5.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13771.0,
+      "end_sec": 13775.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13868.0,
+      "end_sec": 13874.0,
+      "duration_sec": 6.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 13961.0,
+      "end_sec": 13998.0,
+      "duration_sec": 37.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14009.0,
+      "end_sec": 14018.0,
+      "duration_sec": 9.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14051.0,
+      "end_sec": 14077.0,
+      "duration_sec": 26.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14087.0,
+      "end_sec": 14092.0,
+      "duration_sec": 5.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14146.0,
+      "end_sec": 14150.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14160.0,
+      "end_sec": 14176.0,
+      "duration_sec": 16.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14192.0,
+      "end_sec": 14196.0,
+      "duration_sec": 4.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14222.0,
+      "end_sec": 14267.0,
+      "duration_sec": 45.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14297.0,
+      "end_sec": 14318.0,
+      "duration_sec": 21.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14340.0,
+      "end_sec": 14366.0,
+      "duration_sec": 26.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14379.0,
+      "end_sec": 14388.0,
+      "duration_sec": 9.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14402.0,
+      "end_sec": 14496.0,
+      "duration_sec": 94.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14507.0,
+      "end_sec": 14804.0,
+      "duration_sec": 297.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14809.25,
+      "end_sec": 14819.92,
+      "duration_sec": 10.670000000000073,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14819.97,
+      "end_sec": 14839.41,
+      "duration_sec": 19.44000000000051,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14824.0,
+      "end_sec": 14873.0,
+      "duration_sec": 49.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 14849.0,
+      "end_sec": 14851.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14856.13,
+      "end_sec": 14872.48,
+      "duration_sec": 16.350000000000364,
+      "position": "Supine",
+      "spo2_nadir": 84.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14886.37,
+      "end_sec": 14905.1,
+      "duration_sec": 18.729999999999563,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14916.0,
+      "end_sec": 14924.0,
+      "duration_sec": 8.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 14918.54,
+      "end_sec": 14941.2,
+      "duration_sec": 22.659999999999854,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 14940.0,
+      "end_sec": 14942.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 14951.0,
+      "end_sec": 14952.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14953.92,
+      "end_sec": 14973.84,
+      "duration_sec": 19.920000000000073,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 14960.0,
+      "end_sec": 14997.0,
+      "duration_sec": 37.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 3.075471698113205
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14974.67,
+      "end_sec": 14987.06,
+      "duration_sec": 12.389999999999418,
+      "position": "Supine",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 14989.0,
+      "end_sec": 14997.0,
+      "duration_sec": 8.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 14993.28,
+      "end_sec": 15015.21,
+      "duration_sec": 21.929999999998472,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 15033.32,
+      "end_sec": 15051.4,
+      "duration_sec": 18.079999999999927,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 15040.0,
+      "end_sec": 15046.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.096491228070178
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15056.8,
+      "end_sec": 15067.59,
+      "duration_sec": 10.790000000000873,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15189.56,
+      "end_sec": 15208.35,
+      "duration_sec": 18.790000000000873,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 15224.71,
+      "end_sec": 15248.61,
+      "duration_sec": 23.900000000001455,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15260.22,
+      "end_sec": 15270.63,
+      "duration_sec": 10.409999999999854,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15301.0,
+      "end_sec": 15302.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15302.06,
+      "end_sec": 15315.66,
+      "duration_sec": 13.600000000000364,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15322.53,
+      "end_sec": 15346.17,
+      "duration_sec": 23.639999999999418,
+      "position": "Supine",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 15358.0,
+      "end_sec": 15361.0,
+      "duration_sec": 3.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 15364.97,
+      "end_sec": 15382.83,
+      "duration_sec": 17.860000000000582,
+      "position": "Left",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15400.01,
+      "end_sec": 15429.01,
+      "duration_sec": 29.0,
+      "position": "Left",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15441.0,
+      "end_sec": 15443.0,
+      "duration_sec": 2.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15442.15,
+      "end_sec": 15477.94,
+      "duration_sec": 35.79000000000087,
+      "position": "Left",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 15450.0,
+      "end_sec": 15457.0,
+      "duration_sec": 7.0,
+      "position": "Left",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 4.272727272727266
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15494.96,
+      "end_sec": 15520.34,
+      "duration_sec": 25.38000000000102,
+      "position": "Left",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15525.0,
+      "end_sec": 15526.0,
+      "duration_sec": 1.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15528.0,
+      "end_sec": 15529.0,
+      "duration_sec": 1.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15540.1,
+      "end_sec": 15569.75,
+      "duration_sec": 29.649999999999636,
+      "position": "Left",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15626.0,
+      "end_sec": 15627.0,
+      "duration_sec": 1.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15715.82,
+      "end_sec": 15736.17,
+      "duration_sec": 20.350000000000364,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15753.52,
+      "end_sec": 15781.04,
+      "duration_sec": 27.520000000000437,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 15758.0,
+      "end_sec": 15767.0,
+      "duration_sec": 9.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.504132231404952
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15787.0,
+      "end_sec": 15788.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15791.0,
+      "end_sec": 15793.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 15798.13,
+      "end_sec": 15822.97,
+      "duration_sec": 24.840000000000146,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15830.0,
+      "end_sec": 15833.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 15844.81,
+      "end_sec": 15868.57,
+      "duration_sec": 23.76000000000022,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15872.0,
+      "end_sec": 15874.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 15877.0,
+      "end_sec": 15880.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 15927.05,
+      "end_sec": 15952.7,
+      "duration_sec": 25.650000000001455,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 15987.8,
+      "end_sec": 15998.99,
+      "duration_sec": 11.19000000000051,
+      "position": "Prone",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16047.73,
+      "end_sec": 16065.32,
+      "duration_sec": 17.590000000000146,
+      "position": "Prone",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 16076.0,
+      "end_sec": 16090.0,
+      "duration_sec": 14.0,
+      "position": "Prone",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 5.776859504132233
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16081.21,
+      "end_sec": 16102.17,
+      "duration_sec": 20.960000000000946,
+      "position": "Prone",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16159.71,
+      "end_sec": 16171.04,
+      "duration_sec": 11.330000000001746,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16317.33,
+      "end_sec": 16337.83,
+      "duration_sec": 20.5,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16455.75,
+      "end_sec": 16477.52,
+      "duration_sec": 21.770000000000437,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16512.23,
+      "end_sec": 16572.13,
+      "duration_sec": 59.900000000001455,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 16554.0,
+      "end_sec": 16565.0,
+      "duration_sec": 11.0,
+      "position": "Prone",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 3.537190082644628
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 16569.0,
+      "end_sec": 16572.0,
+      "duration_sec": 3.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.008264462809919
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16595.41,
+      "end_sec": 16643.98,
+      "duration_sec": 48.56999999999971,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 16661.0,
+      "end_sec": 16669.0,
+      "duration_sec": 8.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.586776859504127
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16666.31,
+      "end_sec": 16693.62,
+      "duration_sec": 27.30999999999767,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16696.16,
+      "end_sec": 16724.01,
+      "duration_sec": 27.849999999998545,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16739.77,
+      "end_sec": 16765.07,
+      "duration_sec": 25.299999999999272,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 16747.0,
+      "end_sec": 16750.0,
+      "duration_sec": 3.0,
+      "position": "Prone",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 3.280991735537185
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16766.08,
+      "end_sec": 16785.95,
+      "duration_sec": 19.86999999999898,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16809.98,
+      "end_sec": 16823.51,
+      "duration_sec": 13.529999999998836,
+      "position": "Prone",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 16832.35,
+      "end_sec": 16849.16,
+      "duration_sec": 16.81000000000131,
+      "position": "Prone",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 16874.0,
+      "end_sec": 16880.0,
+      "duration_sec": 6.0,
+      "position": "Prone",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 4.611570247933884
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16926.51,
+      "end_sec": 16967.63,
+      "duration_sec": 41.12000000000262,
+      "position": "Prone",
+      "spo2_nadir": 95.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 16975.09,
+      "end_sec": 16986.39,
+      "duration_sec": 11.299999999999272,
+      "position": "Left",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 17065.81,
+      "end_sec": 17111.78,
+      "duration_sec": 45.969999999997526,
+      "position": "Left",
+      "spo2_nadir": 83.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 17111.0,
+      "end_sec": 17113.0,
+      "duration_sec": 2.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17127.0,
+      "end_sec": 17129.0,
+      "duration_sec": 2.0,
+      "position": "Upright",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 3.1570247933884303
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17131.0,
+      "end_sec": 17143.0,
+      "duration_sec": 12.0,
+      "position": "Upright",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 10.123966942148755
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17154.58,
+      "end_sec": 17191.08,
+      "duration_sec": 36.5,
+      "position": "Upright",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17203.0,
+      "end_sec": 17208.0,
+      "duration_sec": 5.0,
+      "position": "Upright",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.123966942148755
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17212.83,
+      "end_sec": 17233.99,
+      "duration_sec": 21.159999999999854,
+      "position": "Upright",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17240.25,
+      "end_sec": 17267.32,
+      "duration_sec": 27.06999999999971,
+      "position": "Upright",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17276.0,
+      "end_sec": 17280.0,
+      "duration_sec": 4.0,
+      "position": "Left",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.008264462809919
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 17363.61,
+      "end_sec": 17388.95,
+      "duration_sec": 25.340000000000146,
+      "position": "Left",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 17390.0,
+      "end_sec": 17391.0,
+      "duration_sec": 1.0,
+      "position": "Left"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17415.0,
+      "end_sec": 17418.0,
+      "duration_sec": 3.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.247933884297524
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 17449.13,
+      "end_sec": 17465.82,
+      "duration_sec": 16.68999999999869,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17483.0,
+      "end_sec": 17496.0,
+      "duration_sec": 13.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.404958677685954
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 17637.98,
+      "end_sec": 17670.93,
+      "duration_sec": 32.95000000000073,
+      "position": "Prone",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 17677.91,
+      "end_sec": 17699.28,
+      "duration_sec": 21.36999999999898,
+      "position": "Prone",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17680.0,
+      "end_sec": 17684.0,
+      "duration_sec": 4.0,
+      "position": "Prone",
+      "spo2_nadir": 92.0,
+      "spo2_drop": 3.181818181818187
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17779.62,
+      "end_sec": 17804.36,
+      "duration_sec": 24.7400000000016,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17818.38,
+      "end_sec": 17829.38,
+      "duration_sec": 11.0,
+      "position": "Left",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 17902.19,
+      "end_sec": 17935.37,
+      "duration_sec": 33.18000000000029,
+      "position": "Right",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17961.2,
+      "end_sec": 17985.1,
+      "duration_sec": 23.899999999997817,
+      "position": "Right",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 17962.0,
+      "end_sec": 17969.0,
+      "duration_sec": 7.0,
+      "position": "Right",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 4.32231404958678
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 17986.29,
+      "end_sec": 18006.43,
+      "duration_sec": 20.139999999999418,
+      "position": "Right",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 18006.43,
+      "end_sec": 18035.17,
+      "duration_sec": 28.739999999997963,
+      "position": "Right",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 18048.52,
+      "end_sec": 18062.93,
+      "duration_sec": 14.409999999999854,
+      "position": "Right",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18055.0,
+      "end_sec": 18066.0,
+      "duration_sec": 11.0,
+      "position": "Right",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 8.628099173553721
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 18175.94,
+      "end_sec": 18186.28,
+      "duration_sec": 10.340000000000146,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 18186.61,
+      "end_sec": 18199.53,
+      "duration_sec": 12.919999999998254,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18212.0,
+      "end_sec": 18219.0,
+      "duration_sec": 7.0,
+      "position": "Supine",
+      "spo2_nadir": 92.0,
+      "spo2_drop": 3.173553719008268
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 18219.4,
+      "end_sec": 18254.54,
+      "duration_sec": 35.13999999999942,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18222.0,
+      "end_sec": 18227.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.8512396694214885
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18280.0,
+      "end_sec": 18283.0,
+      "duration_sec": 3.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.3966942148760353
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 18284.0,
+      "end_sec": 18294.66,
+      "duration_sec": 10.659999999999854,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 18301.75,
+      "end_sec": 18324.86,
+      "duration_sec": 23.110000000000582,
+      "position": "Prone",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18493.0,
+      "end_sec": 18495.0,
+      "duration_sec": 2.0,
+      "position": "Prone",
+      "spo2_nadir": 93.0,
+      "spo2_drop": 3.595041322314046
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18503.0,
+      "end_sec": 18507.0,
+      "duration_sec": 4.0,
+      "position": "Prone",
+      "spo2_nadir": 93.0,
+      "spo2_drop": 3.4297520661156966
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 18558.59,
+      "end_sec": 18606.71,
+      "duration_sec": 48.11999999999898,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18619.0,
+      "end_sec": 18630.0,
+      "duration_sec": 11.0,
+      "position": "Prone",
+      "spo2_nadir": 90.0,
+      "spo2_drop": 5.570247933884303
+    },
+    {
+      "event_type": "Hypopnea",
+      "start_sec": 18624.36,
+      "end_sec": 18649.27,
+      "duration_sec": 24.909999999999854,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18863.0,
+      "end_sec": 18870.0,
+      "duration_sec": 7.0,
+      "position": "Supine",
+      "spo2_nadir": 88.0,
+      "spo2_drop": 5.578512396694208
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18906.0,
+      "end_sec": 18931.0,
+      "duration_sec": 25.0,
+      "position": "Supine",
+      "spo2_nadir": 81.0,
+      "spo2_drop": 10.495867768595048
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 18972.0,
+      "end_sec": 18980.0,
+      "duration_sec": 8.0,
+      "position": "Supine",
+      "spo2_nadir": 83.0,
+      "spo2_drop": 7.752066115702476
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19006.12,
+      "end_sec": 19060.1,
+      "duration_sec": 53.97999999999956,
+      "position": "Supine",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 19061.0,
+      "end_sec": 19087.0,
+      "duration_sec": 26.0,
+      "position": "Prone",
+      "spo2_nadir": 79.0,
+      "spo2_drop": 11.702479338842977
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19070.83,
+      "end_sec": 19097.34,
+      "duration_sec": 26.5099999999984,
+      "position": "Prone",
+      "spo2_nadir": 79.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19107.73,
+      "end_sec": 19140.87,
+      "duration_sec": 33.13999999999942,
+      "position": "Prone",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 19150.0,
+      "end_sec": 19170.0,
+      "duration_sec": 20.0,
+      "position": "Prone",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 5.471074380165291
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19156.47,
+      "end_sec": 19183.02,
+      "duration_sec": 26.549999999999272,
+      "position": "Prone",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19200.66,
+      "end_sec": 19230.86,
+      "duration_sec": 30.200000000000728,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19250.07,
+      "end_sec": 19281.43,
+      "duration_sec": 31.360000000000582,
+      "position": "Prone",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 19282.64,
+      "end_sec": 19323.77,
+      "duration_sec": 41.13000000000102,
+      "position": "Prone",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 19310.0,
+      "end_sec": 19313.0,
+      "duration_sec": 3.0,
+      "position": "Prone",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.3966942148760353
+    },
+    {
+      "event_type": "MixedApnea",
+      "start_sec": 20532.2,
+      "end_sec": 20556.86,
+      "duration_sec": 24.659999999999854,
+      "position": "Unknown",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20557.39,
+      "end_sec": 20583.05,
+      "duration_sec": 25.659999999999854,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20604.83,
+      "end_sec": 20628.82,
+      "duration_sec": 23.989999999997963,
+      "position": "Supine",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20623.0,
+      "end_sec": 20625.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20629.98,
+      "end_sec": 20648.06,
+      "duration_sec": 18.080000000001746,
+      "position": "Supine",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20632.0,
+      "end_sec": 20633.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20636.0,
+      "end_sec": 20637.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 20646.0,
+      "end_sec": 20656.0,
+      "duration_sec": 10.0,
+      "position": "Supine",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 3.487603305785129
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20652.0,
+      "end_sec": 20653.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20669.0,
+      "end_sec": 20670.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20673.0,
+      "end_sec": 20674.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20707.0,
+      "end_sec": 20708.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20710.0,
+      "end_sec": 20712.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20715.0,
+      "end_sec": 20716.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20719.0,
+      "end_sec": 20720.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20727.0,
+      "end_sec": 20729.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20731.0,
+      "end_sec": 20732.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20735.0,
+      "end_sec": 20737.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20739.0,
+      "end_sec": 20741.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20750.0,
+      "end_sec": 20753.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20756.58,
+      "end_sec": 20768.97,
+      "duration_sec": 12.389999999999418,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20772.0,
+      "end_sec": 20774.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20778.0,
+      "end_sec": 20780.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20779.78,
+      "end_sec": 20812.46,
+      "duration_sec": 32.68000000000029,
+      "position": "Supine",
+      "spo2_nadir": 95.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20781.0,
+      "end_sec": 20784.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20787.0,
+      "end_sec": 20788.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20797.0,
+      "end_sec": 20798.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20810.0,
+      "end_sec": 20813.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20818.78,
+      "end_sec": 20840.56,
+      "duration_sec": 21.780000000002474,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20847.0,
+      "end_sec": 20848.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20851.0,
+      "end_sec": 20853.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 20853.83,
+      "end_sec": 20880.01,
+      "duration_sec": 26.179999999996653,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 20868.0,
+      "end_sec": 20873.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 4.421487603305792
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20879.0,
+      "end_sec": 20881.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20882.0,
+      "end_sec": 20885.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20886.0,
+      "end_sec": 20888.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20890.0,
+      "end_sec": 20892.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20895.0,
+      "end_sec": 20898.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20896.83,
+      "end_sec": 20917.9,
+      "duration_sec": 21.06999999999971,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20925.0,
+      "end_sec": 20926.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 20929.0,
+      "end_sec": 20931.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 20930.99,
+      "end_sec": 20948.41,
+      "duration_sec": 17.419999999998254,
+      "position": "Supine",
+      "spo2_nadir": 90.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21284.0,
+      "end_sec": 21285.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21424.0,
+      "end_sec": 21425.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21476.0,
+      "end_sec": 21477.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21576.0,
+      "end_sec": 21578.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21580.0,
+      "end_sec": 21581.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21625.0,
+      "end_sec": 21627.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21629.0,
+      "end_sec": 21630.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21633.0,
+      "end_sec": 21634.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21637.0,
+      "end_sec": 21638.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21676.0,
+      "end_sec": 21677.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21772.0,
+      "end_sec": 21774.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21775.0,
+      "end_sec": 21777.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21812.0,
+      "end_sec": 21814.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21815.0,
+      "end_sec": 21818.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21820.0,
+      "end_sec": 21822.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21895.0,
+      "end_sec": 21897.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 21898.0,
+      "end_sec": 21901.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 22012.02,
+      "end_sec": 22066.94,
+      "duration_sec": 54.919999999998254,
+      "position": "Supine",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22019.0,
+      "end_sec": 22021.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22028.0,
+      "end_sec": 22029.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22032.0,
+      "end_sec": 22034.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22063.0,
+      "end_sec": 22065.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22066.0,
+      "end_sec": 22069.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22075.0,
+      "end_sec": 22077.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 22080.0,
+      "end_sec": 22082.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 22081.98,
+      "end_sec": 22106.21,
+      "duration_sec": 24.229999999999563,
+      "position": "Supine",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 22110.39,
+      "end_sec": 22122.09,
+      "duration_sec": 11.700000000000728,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22196.37,
+      "end_sec": 22213.71,
+      "duration_sec": 17.340000000000146,
+      "position": "Unknown",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22231.26,
+      "end_sec": 22245.4,
+      "duration_sec": 14.140000000003056,
+      "position": "Unknown",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22701.96,
+      "end_sec": 22724.49,
+      "duration_sec": 22.530000000002474,
+      "position": "Unknown",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22749.87,
+      "end_sec": 22794.31,
+      "duration_sec": 44.44000000000233,
+      "position": "Unknown",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22819.5,
+      "end_sec": 22844.86,
+      "duration_sec": 25.360000000000582,
+      "position": "Unknown",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22890.51,
+      "end_sec": 22919.76,
+      "duration_sec": 29.25,
+      "position": "Unknown",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22924.45,
+      "end_sec": 22945.65,
+      "duration_sec": 21.200000000000728,
+      "position": "Unknown",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 22966.26,
+      "end_sec": 23001.28,
+      "duration_sec": 35.02000000000044,
+      "position": "Unknown",
+      "spo2_nadir": 91.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 22969.0,
+      "end_sec": 22974.0,
+      "duration_sec": 5.0,
+      "position": "Unknown",
+      "spo2_nadir": 91.0,
+      "spo2_drop": 3.942148760330582
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 23012.26,
+      "end_sec": 23057.48,
+      "duration_sec": 45.220000000001164,
+      "position": "Unknown",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23068.11,
+      "end_sec": 23079.53,
+      "duration_sec": 11.419999999998254,
+      "position": "Supine",
+      "spo2_nadir": 93.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23078.0,
+      "end_sec": 23079.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23083.0,
+      "end_sec": 23084.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23084.78,
+      "end_sec": 23120.08,
+      "duration_sec": 35.30000000000291,
+      "position": "Supine",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23119.0,
+      "end_sec": 23121.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23128.0,
+      "end_sec": 23129.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 23134.0,
+      "end_sec": 23157.0,
+      "duration_sec": 23.0,
+      "position": "Supine",
+      "spo2_nadir": 85.0,
+      "spo2_drop": 7.793388429752071
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23141.57,
+      "end_sec": 23184.17,
+      "duration_sec": 42.599999999998545,
+      "position": "Supine",
+      "spo2_nadir": 85.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23222.0,
+      "end_sec": 23224.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23225.0,
+      "end_sec": 23228.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23232.0,
+      "end_sec": 23234.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23241.45,
+      "end_sec": 23255.14,
+      "duration_sec": 13.68999999999869,
+      "position": "Supine",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 23252.0,
+      "end_sec": 23257.0,
+      "duration_sec": 5.0,
+      "position": "Supine",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 3.04132231404958
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23259.0,
+      "end_sec": 23262.0,
+      "duration_sec": 3.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23264.0,
+      "end_sec": 23266.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23270.0,
+      "end_sec": 23272.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23282.0,
+      "end_sec": 23283.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23288.48,
+      "end_sec": 23304.11,
+      "duration_sec": 15.630000000001019,
+      "position": "Supine",
+      "spo2_nadir": 94.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23305.0,
+      "end_sec": 23306.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23314.6,
+      "end_sec": 23358.23,
+      "duration_sec": 43.63000000000102,
+      "position": "Supine",
+      "spo2_nadir": 92.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 23355.0,
+      "end_sec": 23361.0,
+      "duration_sec": 6.0,
+      "position": "Supine",
+      "spo2_nadir": 92.0,
+      "spo2_drop": 3.2117647058823593
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23357.0,
+      "end_sec": 23359.0,
+      "duration_sec": 2.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 23372.0,
+      "end_sec": 23409.0,
+      "duration_sec": 37.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23380.02,
+      "end_sec": 23403.23,
+      "duration_sec": 23.209999999999127,
+      "position": "Supine",
+      "spo2_nadir": 88.0
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23402.0,
+      "end_sec": 23403.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23412.0,
+      "end_sec": 23413.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23415.09,
+      "end_sec": 23468.51,
+      "duration_sec": 53.419999999998254,
+      "position": "Supine",
+      "spo2_nadir": 86.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 23442.0,
+      "end_sec": 23444.0,
+      "duration_sec": 2.0,
+      "position": "Supine",
+      "spo2_nadir": 86.0,
+      "spo2_drop": 3.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 23466.0,
+      "end_sec": 23493.0,
+      "duration_sec": 27.0,
+      "position": "Unknown",
+      "spo2_nadir": 87.0,
+      "spo2_drop": 3.7009345794392488
+    },
+    {
+      "event_type": "Snore",
+      "start_sec": 23467.0,
+      "end_sec": 23468.0,
+      "duration_sec": 1.0,
+      "position": "Supine"
+    },
+    {
+      "event_type": "ObstructiveApnea",
+      "start_sec": 23474.45,
+      "end_sec": 23486.52,
+      "duration_sec": 12.069999999999709,
+      "position": "Unknown",
+      "spo2_nadir": 87.0
+    },
+    {
+      "event_type": "ExcludedData",
+      "start_sec": 23480.0,
+      "end_sec": 23491.0,
+      "duration_sec": 11.0,
+      "position": "Unknown"
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 23496.31,
+      "end_sec": 23512.27,
+      "duration_sec": 15.959999999999127,
+      "position": "Unknown",
+      "spo2_nadir": 89.0
+    },
+    {
+      "event_type": "Desaturation",
+      "start_sec": 23500.0,
+      "end_sec": 23502.0,
+      "duration_sec": 2.0,
+      "position": "Unknown",
+      "spo2_nadir": 89.0,
+      "spo2_drop": 3.645454545454541
+    },
+    {
+      "event_type": "CentralApnea",
+      "start_sec": 23523.12,
+      "end_sec": 23548.7,
+      "duration_sec": 25.580000000001746,
+      "position": "Unknown",
+      "spo2_nadir": 94.0
+    }
+  ]
+}

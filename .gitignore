@@ -1,10 +1,9 @@
 # Project Folders
 extracted/
-docs/
+
 
 # Rust
 hst-detector/target/
-hst-detector/tune.py
 
 # Python
 .venv/
@@ -13,11 +12,11 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data & Models (large files)
-data/processed/
-data/experiments/
-data/results/
-data/raw/**/*.edf
-data/raw/**/*.mmrx
+#data/processed/
+#data/experiments/
+#data/results/
+#data/raw/**/*.edf
+#data/raw/**/*.mmrx
 *.npz
 *.pth
 *.mlx
