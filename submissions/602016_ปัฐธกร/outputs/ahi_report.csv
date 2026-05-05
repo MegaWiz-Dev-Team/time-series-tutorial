@@ -1,0 +1,16 @@
+patient_id,GT AHI,Detected AHI,AHI Error,ODI,Mean SpO2,Nadir SpO2,T90 (%),Severity (GT),Severity (Det)
+patient_001,45.48,27.32,18.16,29.91,92.17,70.0,21.09,Severe,Moderate
+patient_002,79.16,69.92,9.24,66.41,90.44,58.0,33.31,Severe,Severe
+patient_003,13.15,12.72,0.43,7.0,94.9,79.0,8.56,Mild,Mild
+patient_004,53.88,46.01,7.87,50.68,90.91,73.0,31.07,Severe,Severe
+patient_005,10.49,7.33,3.16,4.74,94.16,80.0,1.27,Mild,Mild
+patient_006,82.69,90.9,8.21,100.93,79.83,50.0,73.61,Severe,Severe
+patient_007,37.36,30.58,6.78,16.27,94.11,71.0,4.89,Severe,Severe
+patient_008,25.48,27.75,2.27,6.56,95.83,87.0,0.1,Moderate,Moderate
+patient_009,27.73,10.77,16.96,7.82,92.98,82.0,8.62,Moderate,Mild
+patient_010,8.51,8.04,0.47,1.31,97.57,81.0,0.27,Mild,Mild
+patient_011,24.41,18.23,6.18,13.6,94.57,83.0,1.42,Moderate,Moderate
+patient_012,16.29,9.26,7.03,4.95,94.28,78.0,2.04,Moderate,Mild
+patient_013,14.26,11.24,3.02,10.83,94.06,78.0,5.75,Mild,Mild
+patient_014,32.58,19.62,12.96,12.08,94.06,75.0,2.19,Severe,Moderate
+patient_015,41.65,38.78,2.87,29.77,94.37,68.0,8.24,Severe,Severe
