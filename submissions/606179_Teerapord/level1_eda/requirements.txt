@@ -1,0 +1,1 @@
+edfio>=0.4.13\npandas>=2.0.0\nnumpy>=1.24.0\nmatplotlib>=3.7.0\nseaborn>=0.12.0\njupyter\nfastparquet\n
