@@ -26,3 +26,6 @@ __pycache__/
 .vscode/
 .idea/
 *.log
+
+# Generated FHIR bundles + analytics (regenerate via scripts/)
+outputs/
