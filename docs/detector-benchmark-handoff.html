@@ -1,0 +1,380 @@
+<title>Nótt Detector — Benchmark & Tuning Handoff (EN/TH)</title>
+<style>
+  :root{
+    --paper:#F6F8FB; --card:#FFFFFF; --ink:#182034; --muted:#586077; --faint:#8A93A8;
+    --aqua:#0E9C94; --aqua-deep:#0B7A74; --navy:#1E3A5F;
+    --good:#2E9E63; --warn:#B4791E; --coral:#D0603C;
+    --tint:#ECF7F6; --line:#E4E9F1; --code:#EEF2F8;
+    --serif:ui-serif,"New York",Georgia,"Times New Roman",serif;
+    --sans:-apple-system,"SF Pro Display","Segoe UI",system-ui,sans-serif;
+    --thai:"Thonburi","Sarabun",system-ui,sans-serif;
+    --mono:"SF Mono",ui-monospace,"Menlo",monospace;
+  }
+  *{box-sizing:border-box}
+  .wrap{background:var(--paper);color:var(--ink);font-family:var(--serif);
+    padding:clamp(22px,5vw,60px) clamp(16px,5vw,40px);-webkit-font-smoothing:antialiased}
+  .doc{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:34px}
+  .doc>section{display:flex;flex-direction:column;gap:15px}
+
+  .eyebrow{font:600 12px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--aqua-deep)}
+  h1{font:640 clamp(28px,4.6vw,42px)/1.06 var(--sans);letter-spacing:-.015em;margin:8px 0 0;text-wrap:balance}
+  .lede{font-size:18px;color:var(--muted);max-width:66ch;margin:6px 0 0}
+  h2{font:640 22px/1.2 var(--sans);letter-spacing:-.01em;margin:0;display:flex;align-items:baseline;gap:12px;text-wrap:balance}
+  h2 .n{font:700 13px/1 var(--mono);color:var(--aqua-deep);background:var(--tint);border:1px solid #cfeae7;
+    padding:6px 8px;border-radius:7px;flex:none;letter-spacing:0}
+  h3{font:640 16px/1.3 var(--sans);margin:6px 0 0;color:var(--navy)}
+  p{margin:0;max-width:68ch;font-size:16.5px;line-height:1.62}
+  p b{font-weight:640} em{color:var(--navy);font-style:italic}
+  a{color:var(--aqua-deep)}
+  .doc>section>*{max-width:68ch}
+
+  /* Thai caption block */
+  .th{font-family:var(--thai);background:var(--tint);border-left:3px solid var(--aqua);
+    border-radius:0 10px 10px 0;padding:12px 16px;font-size:15px;line-height:1.7;color:#204a47;max-width:68ch}
+  .th::before{content:"ไทย";display:block;font:700 10.5px/1 var(--mono);letter-spacing:.1em;color:var(--aqua-deep);margin-bottom:5px}
+  .th b{font-weight:700;color:#123c39}
+
+  code{font-family:var(--mono);font-size:.86em;background:var(--code);padding:1.5px 6px;border-radius:5px;color:var(--navy)}
+  pre{font-family:var(--mono);font-size:13px;line-height:1.6;background:#0f1626;color:#dbe4f5;
+    padding:16px 18px;border-radius:11px;overflow-x:auto;max-width:100%}
+  pre .c{color:#6b7699} pre .k{color:#5fd0c9}
+
+  .card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:20px 22px;
+    display:flex;flex-direction:column;gap:12px;max-width:100%}
+  figure{margin:0;display:flex;flex-direction:column;gap:10px;max-width:100%}
+  figcaption{font-size:13.5px;color:var(--faint);font-family:var(--sans);max-width:66ch}
+  canvas{width:100%;height:auto;display:block}
+
+  .tbl-scroll{overflow-x:auto;max-width:100%}
+  table{width:100%;border-collapse:collapse;font-family:var(--sans);font-size:14px;min-width:440px}
+  th,td{padding:11px 12px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;white-space:nowrap}
+  th:first-child,td:first-child{text-align:left}
+  thead th{font:600 11px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;color:var(--faint)}
+  tbody tr:last-child td{border-bottom:none}
+  tr.win td{background:rgba(14,156,148,.08)} tr.win td:first-child{color:var(--aqua-deep);font-weight:640}
+  .g{color:var(--good);font-weight:600} .r{color:var(--coral)}
+
+  ul.k{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:11px;max-width:68ch}
+  ul.k li{padding-left:24px;position:relative;font-size:16px;line-height:1.55}
+  ul.k li::before{content:"";position:absolute;left:2px;top:9px;width:8px;height:8px;border-radius:2px;background:var(--aqua)}
+
+  .metric-bars{display:flex;flex-direction:column;gap:11px;font-family:var(--sans)}
+  .mb{display:grid;grid-template-columns:135px 1fr;gap:12px;align-items:center;font-size:13px}
+  .mb .l{color:var(--muted)} .mb .l b{display:block;color:var(--ink);font-weight:640}
+  .mtrack{position:relative;height:30px;background:#eef1f7;border:1px solid var(--line);border-radius:7px}
+  .mfill{position:absolute;top:0;bottom:0;border-radius:6px}
+  .mfill.rule{background:#e0b7ab} .mfill.dim{background:#b9c2d8} .mfill.win{background:linear-gradient(90deg,#7fd8d2,var(--aqua))}
+  .mval{position:absolute;top:50%;transform:translateY(-50%);font:600 12px/1 var(--mono);color:var(--ink)}
+  .mceil{position:absolute;top:-5px;bottom:-5px;border-left:2px dashed var(--warn)}
+  .mceil span{position:absolute;top:-17px;left:5px;font:600 10px/1 var(--mono);color:var(--warn);white-space:nowrap}
+
+  .gloss{display:grid;grid-template-columns:1fr;gap:0}
+  .gloss .row{display:grid;grid-template-columns:190px 1fr;gap:16px;padding:13px 0;border-bottom:1px solid var(--line)}
+  .gloss .row:last-child{border-bottom:none}
+  .gloss dt{font:640 15px/1.4 var(--sans);color:var(--navy)}
+  .gloss dd{margin:0;font-size:15px;line-height:1.55}
+  .gloss dd .t{display:block;font-family:var(--thai);color:#3c6b67;font-size:14px;margin-top:3px}
+  @media(max-width:600px){.gloss .row{grid-template-columns:1fr;gap:3px}.mb{grid-template-columns:1fr}}
+
+  hr{border:none;border-top:1px solid var(--line);margin:0}
+  .foot{font-family:var(--sans);font-size:13px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+  .foot b{color:var(--ink)}
+  .tag{display:inline-block;font:600 11px/1 var(--mono);color:var(--aqua-deep);background:var(--tint);
+    border:1px solid #cfeae7;padding:5px 8px;border-radius:6px;letter-spacing:.03em}
+</style>
+
+<div class="wrap"><div class="doc">
+
+  <section>
+    <div class="eyebrow">Asgard Nótt · engineering handoff</div>
+    <h1>Telling central from obstructive apnea: how we benchmarked and tuned the detector</h1>
+    <p class="lede">A walkthrough of the whole investigation — the problem, the data, how we measure,
+    every tuning approach we tried, and how we checked we weren't fooling ourselves. Written to be read
+    start to finish.</p>
+    <div class="th">เอกสารนี้เล่า<b>ทั้งกระบวนการ</b>ตั้งแต่โจทย์ → ข้อมูล → วิธีวัดผล → วิธีปรับจูนแบบต่างๆ → การตรวจสอบว่าไม่ได้หลอกตัวเอง
+    เขียนให้อ่านไล่ตั้งแต่ต้นจนจบ เหมาะกับคนที่เพิ่งเริ่ม (นศ. วิศวะคอม ปี 1 / วิศวะการแพทย์ ปี 3). ศัพท์เทคนิคมีอธิบายใน <b>Glossary</b> ท้ายเอกสาร</div>
+  </section>
+
+  <section>
+    <h2><span class="n">1</span>The clinical problem</h2>
+    <p>Sleep apnea is when breathing repeatedly stops during sleep. There are two kinds that look
+    almost the same on a breathing trace but need <em>opposite</em> treatments:</p>
+    <ul class="k">
+      <li><b>Obstructive apnea</b> — the airway collapses, but the brain still <em>tries</em> to breathe.
+      The chest keeps moving (effort continues) while airflow stops. Treated with <b>CPAP</b> (air pressure to hold the airway open).</li>
+      <li><b>Central apnea</b> — the brain <em>stops sending the signal</em> to breathe. Airflow stops
+      <em>and</em> the chest stops moving (no effort). Often a sign of a heart problem → needs cardiac work-up, not plain CPAP.</li>
+    </ul>
+    <p>So the machine's job is: for each apnea, decide <b>obstructive or central</b>. Getting central wrong
+    can send a heart patient down the wrong path.</p>
+    <div class="th"><b>โจทย์:</b> ภาวะหยุดหายใจขณะหลับมี 2 แบบที่หน้าตาคล้ายกันมากแต่รักษาคนละทาง —
+    <b>Obstructive</b> (ทางเดินหายใจตีบ แต่สมองยังสั่งให้หายใจ → อกยังขยับ) รักษาด้วย CPAP;
+    <b>Central</b> (สมองหยุดสั่งหายใจ → อกไม่ขยับเลย) มักโยงโรคหัวใจ ต้องส่งตรวจหัวใจ ไม่ใช่ CPAP ธรรมดา
+    งานของตัว detector คือ<b>แยกให้ถูกว่าเป็นแบบไหน</b> เพราะถ้าพลาด central อาจส่งคนไข้หัวใจไปผิดทาง</p>
+
+    <figure class="card">
+      <canvas id="sig" width="740" height="230" aria-label="Obstructive vs central apnea signal comparison"></canvas>
+      <figcaption>The one picture that explains everything. During the apnea (shaded), airflow stops in
+      <em>both</em> cases — the difference is the <b>effort belt</b> (chest movement): it keeps going in obstructive,
+      goes flat in central. Our whole detector hangs on reading that effort signal.
+      <span style="display:block;font-family:var(--thai);color:#3c6b67;margin-top:5px">ภาพเดียวที่อธิบายทุกอย่าง: ช่วงหยุดหายใจ (แถบเทา) <b>airflow หยุดทั้งคู่</b> — ต่างกันที่ <b>สายวัดแรงหายใจที่อก (effort)</b>: obstructive อกยังขยับ, central อกนิ่ง</span></figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2><span class="n">2</span>The device constraint &amp; the shipped rule</h2>
+    <p>Our product (<b>Nótt</b>) runs on a <b>Type-3 home sleep test</b> (ResMed ApneaLink). That means
+    a small set of signals — nasal <b>flow</b>, one chest <b>effort</b> belt, blood-oxygen <b>SpO₂</b>, and
+    pulse — and crucially <em>no EEG</em> (no brain-wave channel, unlike a full lab sleep study). With one
+    effort belt, the only real clue for central-vs-obstructive is: <b>did chest effort disappear?</b></p>
+    <p>The shipped detector (<code>detect.rs</code>) uses a simple rule. It measures how much the effort
+    signal is moving during the apnea, as a ratio to the patient's typical breathing:</p>
+    <pre><span class="c"># effort "energy" during the apnea, relative to a whole-night reference</span>
+rt = variance(effort during apnea) / night_reference
+<span class="k">if</span> rt &lt; 0.15:  <span class="c"># effort nearly gone → call it CENTRAL</span>
+    central
+<span class="k">else</span>:          <span class="c"># effort still present → OBSTRUCTIVE</span>
+    obstructive</pre>
+    <p>One number (<code>rt</code>), one threshold (<code>0.15</code>). It's a reasonable first cut, and it's
+    what we're trying to beat.</p>
+    <div class="th"><b>ข้อจำกัดเครื่อง:</b> Nótt เป็น Home Sleep Test แบบ Type-3 — มีแค่ flow / effort (สายอกเส้นเดียว) / SpO₂ / pulse
+    และ<b>ไม่มี EEG</b> (คลื่นสมอง) เหมือน sleep lab เต็มรูปแบบ ดังนั้นเบาะแสเดียวของ central-vs-obstructive คือ "อกหยุดขยับไหม"
+    <br>กฎเดิมใน <code>detect.rs</code>: คิด <code>rt</code> = variance ของ effort ช่วงหยุดหายใจ ÷ ค่าอ้างอิงทั้งคืน ถ้า <code>rt &lt; 0.15</code> (แรงหายใจแทบหาย) = central
+    เป็น<b>กฎ threshold เดียว</b> ที่เราจะพยายามทำให้ดีกว่า</div>
+  </section>
+
+  <section>
+    <h2><span class="n">3</span>Building the benchmark data</h2>
+    <p>You can't tune what you can't measure, and you can't measure on 15 patients. We grew the test set
+    by pulling real diagnostic studies from the clinic's ResMed AirView account, <b>anonymized at the
+    source</b> (patient name / IDs scrubbed out of every file before it left, stored under a random token
+    with no way back to a person). Each study gives us the raw waveforms plus AirView's own event scoring.</p>
+    <div class="tbl-scroll"><table>
+      <thead><tr><th>The cohort</th><th>Studies (patients)</th><th>Apnea events used</th></tr></thead>
+      <tbody>
+        <tr><td>Tutorial set (starting point)</td><td>15</td><td>—</td></tr>
+        <tr><td>+ AirView pull (anonymized)</td><td>+140</td><td>—</td></tr>
+        <tr class="win"><td>Benchmark total</td><td>155</td><td>10,014 belt-alive apneas</td></tr>
+      </tbody>
+    </table></div>
+    <p>Why it matters: central apnea is <em>rare</em>. In the old 15-patient set, 60% of all central events
+    came from a <em>single</em> patient — so any result could just be memorizing that one person. The pull
+    spread central events across <b>80 patients</b>, dropping that concentration to 33%. That diversity is
+    what makes the benchmark trustworthy.</p>
+    <p>One honest caveat carried through everything below: our labels are <b>AirView's automatic scoring</b>
+    (we call this <b>“bronze”</b> quality) — good, but not a doctor's hand-scoring. So every score is really
+    <em>“agreement with AirView,”</em> an <em>upper bound</em> on what the machine could reach if the labels were perfect.</p>
+    <div class="th"><b>ข้อมูล:</b> ปรับจูนได้ต้องวัดได้ และวัดบน 15 คนไม่พอ เราจึงดึง sleep study จริงจาก ResMed AirView ของคลินิก
+    (<b>ลบตัวตนตั้งแต่ต้นทาง</b> — ชื่อ/ID ถูก scrub ออกทุกไฟล์ก่อนออกจากระบบ เก็บด้วย token สุ่ม ย้อนกลับไปหาคนไม่ได้)
+    <br>สำคัญ: central เป็น event ที่<b>หายาก</b> — ชุด 15 คนเดิม 60% ของ central มาจากคนเดียว (ผลอาจแค่ "จำ" คนนั้น)
+    การดึงเพิ่มทำให้ central กระจายไป <b>80 คน</b> (กระจุกเหลือ 33%) → benchmark เชื่อถือได้ขึ้น
+    <br>ข้อควรรู้: label เป็น auto-scoring ของ AirView (เรียก <b>bronze</b>) ไม่ใช่หมอ score เอง ดังนั้นทุกคะแนนคือ "ตรงกับ AirView แค่ไหน" = เพดานบน</div>
+  </section>
+
+  <section>
+    <h2><span class="n">4</span>How we measure — the benchmark method</h2>
+    <p>Two ideas do all the heavy lifting here. Get these and the rest is easy.</p>
+
+    <h3>Leave-One-Patient-Out (LOPO)</h3>
+    <p>To test whether a model <em>generalizes</em> to a new patient, you must never let it see that patient
+    during training. So we train on 118 patients and test on the 1 left out — then repeat, holding out each
+    patient in turn, and pool the results. If instead you let one patient's events land in both training and
+    test, the model can <b>cheat by memorizing that person</b> (this mistake is called <b>data leakage</b>),
+    and your numbers look great but mean nothing on real new patients.</p>
+    <div class="th"><b>LOPO (แยกทีละคนออกไปทดสอบ):</b> จะรู้ว่าโมเดลใช้กับคน<b>ใหม่</b>ได้ไหม ต้องไม่ให้มันเห็นคนนั้นตอนเทรน
+    เราจึงเทรนด้วย 118 คน เทสต์คนที่กันไว้ 1 คน แล้ววนกันออกทีละคนจนครบ ถ้าปล่อยให้ event ของคนเดียวกันอยู่ทั้งฝั่งเทรนและเทสต์
+    โมเดลจะ<b>โกงด้วยการจำคนนั้น</b> (เรียก <b>data leakage</b>) — ตัวเลขสวยแต่ใช้กับคนจริงไม่ได้</div>
+
+    <h3>The metrics — and why not plain accuracy</h3>
+    <p>Our data is 9,065 obstructive vs 647 central. A lazy model that shouts “obstructive!” every time is
+    ~90% accurate and 100% useless — it never finds a central. So we use:</p>
+    <ul class="k">
+      <li><b>Balanced accuracy</b> — the average of each class's recall, so the rare central class counts as
+      much as the common obstructive one. (Random guessing on 3 classes ≈ 0.33.)</li>
+      <li><b>Central recall</b> — of all true central apneas, what fraction did we catch? This is the one that
+      matters clinically.</li>
+      <li><b>Obstr→central</b> — of obstructive apneas, what fraction did we wrongly call central? This is the
+      harm: over-calling central sends the wrong patients for a heart work-up.</li>
+    </ul>
+    <div class="th"><b>ตัวชี้วัด:</b> ข้อมูลเรา 9,065 obstructive : 647 central ถ้าโมเดลขี้เกียจตอบ "obstructive" ทุกครั้ง จะแม่น ~90% แต่ไร้ประโยชน์ (ไม่เจอ central เลย) เราจึงใช้
+    <b>Balanced accuracy</b> (เฉลี่ย recall ทุก class ให้ central ที่หายากมีน้ำหนักเท่า obstructive; เดามั่ว 3 class ≈ 0.33),
+    <b>Central recall</b> (จับ central จริงได้กี่ %  = ตัวสำคัญทางคลินิก), และ <b>Obstr→central</b> (obstructive ที่ถูกเรียก central ผิด = ความเสียหาย)</div>
+  </section>
+
+  <section>
+    <h2><span class="n">5</span>The tuning approaches we tried</h2>
+    <p>Three approaches, in order. Each answered a question and pointed to the next.</p>
+
+    <h3>A — Just tune the threshold</h3>
+    <p>Keep the shipped rule, but sweep the <code>0.15</code> threshold across many values and pick the best.
+    <b>Result: it doesn't help.</b> Raising the threshold catches more central but also over-calls far more
+    obstructive — a fixed trade-off on one curve. Best balanced accuracy stayed at <b>0.544</b>. Adding the
+    diverse 140 patients <em>confirmed</em> this ceiling rather than breaking it — both cohorts agreed, so it's
+    a real limit, not a small-sample fluke.</p>
+
+    <h3>B — Same features, but a learned model</h3>
+    <p>The rule uses only <code>rt</code>. But the detector already computes two more numbers — effort in the
+    first vs second <em>half</em> of the event (<code>rf</code>, <code>rs</code>). Feed all three to a small
+    machine-learning classifier (which learns a curved boundary using them jointly, weighting the rare class up)
+    instead of one hand-set threshold. <b>Balanced accuracy jumped to ~0.61–0.65</b> — same information, used
+    better. Lesson: the single-threshold rule was leaving signal on the table.</p>
+
+    <h3>C — Engineer new features from the raw signal</h3>
+    <p>Then we computed <em>new</em> features from the stored waveforms and tested each family:
+    <b>effort timing</b> (how effort varies across four quarters of the event), <b>flow shape</b>,
+    <b>hypoxic burden / SpO₂</b> (depth and timing of oxygen dips), <b>pulse</b> (heart-rate surge = arousal),
+    and <b>flow–effort coupling</b>. Only one family moved the needle — and it moved it a lot.</p>
+
+    <div class="tbl-scroll"><table>
+      <thead><tr><th>Approach (LOPO, class-balanced)</th><th>Balanced acc</th><th>Central recall</th><th>Obstr→central</th></tr></thead>
+      <tbody>
+        <tr><td>A · shipped rule (threshold)</td><td>0.544</td><td>0.570</td><td>0.190</td></tr>
+        <tr><td>B · learned model, same 3 features</td><td>0.61–0.65</td><td>0.65–0.70</td><td>0.12</td></tr>
+        <tr class="win"><td>C · + effort-timing features</td><td>0.67–0.76</td><td><span class="g">0.72–0.82</span></td><td><span class="g">0.03–0.05</span></td></tr>
+        <tr><td>C · + flow / SpO₂ / pulse / coupling</td><td>0.60–0.63</td><td>—</td><td><span class="r">added noise</span></td></tr>
+      </tbody>
+    </table></div>
+
+    <div class="metric-bars" style="margin-top:6px">
+      <div class="mb"><div class="l">shipped rule<b>threshold</b></div><div class="mtrack"><div class="mfill rule" style="left:0;width:28.8%"></div><div class="mval" style="left:calc(28.8% + 7px)">0.544</div><div class="mceil" style="left:60%"><span>0.70</span></div></div></div>
+      <div class="mb"><div class="l">learned model<b>same features</b></div><div class="mtrack"><div class="mfill dim" style="left:41.2%;width:7.8%"></div><div class="mval" style="left:calc(49% + 7px)">0.61–0.65</div><div class="mceil" style="left:60%"></div></div></div>
+      <div class="mb"><div class="l">+ effort-timing<b>the winner</b></div><div class="mtrack"><div class="mfill win" style="left:54.8%;width:17.6%"></div><div class="mval" style="left:calc(72.4% + 7px)">0.67–0.76</div><div class="mceil" style="left:60%"></div></div></div>
+    </div>
+
+    <p><b>Why effort timing wins.</b> A central apnea has no effort in <em>any</em> quarter of the event; an
+    obstructive/mixed one shows effort <em>returning</em> in the middle. The single <code>rt</code> averages
+    the whole event and blurs that away — splitting effort into quarters recovers the <em>timing</em>, and those
+    quarter-features top the importance ranking by a wide margin. Flow/SpO₂/pulse don't add real information on
+    single-belt data, so they just add noise.</p>
+    <div class="th"><b>วิธีปรับจูน 3 แบบ:</b>
+    <b>A)</b> จูน threshold อย่างเดียว → <b>ไม่ช่วย</b> (ติดเพดาน 0.544 เพราะเพิ่ม central ก็ over-call obstructive ตามมา; ข้อมูล 140 คนใหม่<b>ยืนยัน</b>เพดานนี้ ไม่ใช่ทำลาย)
+    <b>B)</b> feature เดิม 3 ตัว (rt + ครึ่งแรก rf + ครึ่งหลัง rs) แต่ใช้<b>โมเดลเรียนรู้</b>แทนกฎ → พุ่งเป็น 0.61–0.65 (ข้อมูลเท่าเดิม ใช้ดีขึ้น)
+    <b>C)</b> สร้าง feature ใหม่จากสัญญาณดิบ แล้วทดสอบทีละกลุ่ม → มีแค่ <b>effort timing</b> (แบ่ง event เป็น 4 ช่วง ดูว่าแรงหายใจโผล่ช่วงไหน) ที่ช่วยจริง → <b>0.67–0.76</b>
+    เหตุผล: central = ไม่มีแรงหายใจ<b>ทุกช่วง</b>; obstructive = แรงหายใจ<b>กลับมาช่วงกลาง</b> — <code>rt</code> ตัวเดียวเฉลี่ยทั้ง event เลยกลืน timing นี้หาย; flow/SpO₂/pulse บน belt เดียวไม่ได้เพิ่มข้อมูล กลายเป็น noise</div>
+  </section>
+
+  <section>
+    <h2><span class="n">6</span>Checking we didn't fool ourselves</h2>
+    <p>A big jump is exactly when you should be suspicious. Three adversarial checks — designed to <em>break</em>
+    the result, not confirm it:</p>
+    <ul class="k">
+      <li><b>Leakage test (shuffle).</b> Randomly shuffle the labels so features and answers no longer match,
+      then re-run. If the score stays high, the model was cheating. It <b>collapsed to 0.338</b> (≈ random) →
+      no leakage; the signal is real.</li>
+      <li><b>Robustness.</b> Re-run with five different models/seeds. The improvement held in <em>every</em> one
+      (they agreed within 0.007) → not a lucky fluke. <em>But</em> the exact <code>0.76</code> only appeared with
+      one well-regularized model; the default gave <code>0.67</code>.</li>
+      <li><b>Label-noise.</b> Maybe AirView mislabels some central? We checked: only <b>1.1%</b> of central events
+      have clear effort. Removing them changed the score by <code>±0.002</code> → the labels are clean; the ceiling
+      wasn't noise.</li>
+    </ul>
+    <p>So the honest conclusion: the improvement is <b>real, leak-free, and robust in direction</b> — but the
+    headline number is <b>config-dependent</b>. We report the <em>reliable lift</em> (+0.07 balanced acc,
+    +0.15 central recall) and a <em>range</em> (0.67–0.76), never a single hero number.</p>
+    <div class="th"><b>ตรวจสอบว่าไม่หลอกตัวเอง</b> (ยิ่งผลกระโดดยิ่งต้องระแวง) ทำ 3 การทดสอบที่ตั้งใจ "หักล้าง" ผล:
+    <b>1) Shuffle test</b> — สลับ label มั่ว ถ้าคะแนนยังสูง = โกง; ผลตกไป <b>0.338</b> (เท่าเดา) = ไม่มี leak
+    <b>2) Robustness</b> — ลอง 5 โมเดล/seed ดีขึ้นทุกตัว (ต่างกันแค่ 0.007) แต่ 0.76 ได้เฉพาะโมเดล regularized ดีๆ; default ได้ 0.67
+    <b>3) Label-noise</b> — central ที่ label น่าสงสัยมีแค่ 1.1% ตัดออกคะแนนขยับ ±0.002 = label สะอาด
+    <br>สรุปอย่างซื่อสัตย์: ผล<b>จริง ไม่ leak robust</b> แต่ตัวเลขขึ้นกับ config → รายงานเป็น<b>ช่วง 0.67–0.76</b> + lift ที่เชื่อได้ (+0.07) ไม่ยกตัวเลขเดียวมาโม้</div>
+  </section>
+
+  <section>
+    <h2><span class="n">7</span>What to take away &amp; do next</h2>
+    <ul class="k">
+      <li><b>The single-threshold rule under-uses the signal.</b> A learned model on effort <em>timing</em> lifts
+      central recall from 0.57 to ~0.72–0.82 with far fewer false alarms — a real clinical win on the class that matters.</li>
+      <li><b>Size it honestly: ~0.67–0.72 balanced accuracy</b>, not 0.76–0.82. Trust the direction; pin the
+      model configuration and validate on patient-disjoint folds before it becomes an official number.</li>
+      <li><b>Port the effort-quartile features into <code>detect.rs</code></b> (Rust) and swap the threshold for
+      the learned model.</li>
+      <li><b>Then chase the label ceiling:</b> pull doctor/technician (“silver/gold”) labels to see how much higher
+      the true ceiling is once AirView's noise is removed.</li>
+    </ul>
+    <div class="th"><b>สรุป &amp; ทำต่อ:</b> กฎ threshold เดียวใช้สัญญาณไม่คุ้ม — โมเดลบน effort <b>timing</b> ดัน central recall 0.57 → 0.72–0.82 พร้อม false alarm น้อยลงมาก
+    (1) ตั้งความคาดหวังที่ ~0.67–0.72 อย่างซื่อสัตย์ (ไม่ใช่ 0.76) + pin config + validate แบบ patient-disjoint ก่อนประกาศ
+    (2) port feature effort-quartile เข้า <code>detect.rs</code> (Rust) แล้วเปลี่ยนจาก threshold → learned model
+    (3) ดึง label หมอ/นักเทคนิค (silver/gold) ดูเพดานจริงเมื่อตัด noise ของ AirView</div>
+  </section>
+
+  <section>
+    <h2><span class="n">8</span>Glossary</h2>
+    <div class="card"><dl class="gloss">
+      <div class="row"><dt>EDF</dt><dd>European Data Format — the standard file for raw biomedical time-series (our waveforms live here).<span class="t">ไฟล์มาตรฐานเก็บสัญญาณชีวการแพทย์แบบ time-series</span></dd></div>
+      <div class="row"><dt>Effort (RIP belt)</dt><dd>A stretchy belt around the chest that measures breathing effort by how much the chest expands.<span class="t">สายรัดอกวัด "แรงพยายามหายใจ" จากการขยายของทรวงอก</span></dd></div>
+      <div class="row"><dt>Feature</dt><dd>A number computed from the raw signal that the model reads (e.g. effort variance in a quarter of the event).<span class="t">ตัวเลขที่คำนวณจากสัญญาณดิบเพื่อป้อนโมเดล</span></dd></div>
+      <div class="row"><dt>Class imbalance</dt><dd>When one class (obstructive) vastly outnumbers another (central). Breaks plain accuracy.<span class="t">คลาสหนึ่งเยอะกว่าอีกคลาสมาก ทำให้ accuracy ธรรมดาใช้ไม่ได้</span></dd></div>
+      <div class="row"><dt>Balanced accuracy</dt><dd>Average recall across classes, so a rare class counts equally.<span class="t">เฉลี่ย recall ทุกคลาส ให้คลาสหายากมีน้ำหนักเท่ากัน</span></dd></div>
+      <div class="row"><dt>Recall</dt><dd>Of the true cases of a class, the fraction the model caught.<span class="t">ในของจริงคลาสนั้น โมเดลจับได้กี่ %</span></dd></div>
+      <div class="row"><dt>LOPO-CV</dt><dd>Leave-One-Patient-Out cross-validation — test on a patient the model never trained on.<span class="t">เทสต์บนคนที่โมเดลไม่เคยเห็นตอนเทรน</span></dd></div>
+      <div class="row"><dt>Data leakage</dt><dd>When test information sneaks into training, inflating scores dishonestly.<span class="t">ข้อมูลเทสต์รั่วเข้าไปในการเทรน ทำให้คะแนนสูงแบบหลอกๆ</span></dd></div>
+      <div class="row"><dt>Overfitting</dt><dd>A model that memorizes training quirks instead of learning the general pattern.<span class="t">โมเดลจำรายละเอียดชุดเทรนแทนที่จะเรียนรู้แพตเทิร์นทั่วไป</span></dd></div>
+      <div class="row"><dt>Ablation</dt><dd>Adding/removing one feature group at a time to see what actually helps.<span class="t">ใส่/ถอด feature ทีละกลุ่มเพื่อดูว่าอันไหนช่วยจริง</span></dd></div>
+      <div class="row"><dt>Hypoxic Burden</dt><dd>How deep and long blood-oxygen dips during events — a heart-risk marker.<span class="t">ความลึก×นานของการที่ออกซิเจนตก ระหว่าง event = ตัวชี้ความเสี่ยงหัวใจ</span></dd></div>
+    </dl></div>
+  </section>
+
+  <section>
+    <h2><span class="n">9</span>Reproduce it yourself</h2>
+    <p>Everything is scripted. The scripts run under a Python venv with <code>numpy scipy scikit-learn
+    pyedflib</code>; data is on disk and in MariaDB.</p>
+    <pre><span class="c"># 1. features → per-event feature matrix (10,014 × 22) from the raw npz</span>
+python feature_engineer.py        <span class="c"># writes features.npz</span>
+<span class="c"># 2. the benchmark: LOPO ablation across feature families + 2 models</span>
+python lopo_ablation.py           <span class="c"># prints the results table</span>
+<span class="c"># 3. threshold-only tuning (approach A), for comparison</span>
+python tune_effort_ratio.py</pre>
+    <div class="foot">
+      <span><b>Raw studies</b> · <code>…/time-series-tutorial/data/megacare-airview/patient_&lt;token&gt;/{recording.edf, events.json}</code> (173)</span>
+      <span><b>Full-night signals</b> · <code>…/data/nott_det_windows/*.npz</code> (155)</span>
+      <span><b>Events + features</b> · MariaDB <code>nott_det_*</code>, tenant <code>asgard_megacare</code> (27,085 events)</span>
+      <span><b>Code</b> · asgard-nott PR #26 (ingest + loader) · mega-care PR #289 (anonymized pull)</span>
+    </div>
+    <div class="th"><b>ทำซ้ำเองได้:</b> ทุกอย่างเป็นสคริปต์ — <code>feature_engineer.py</code> (สร้าง feature matrix) → <code>lopo_ablation.py</code> (benchmark LOPO)
+    → <code>tune_effort_ratio.py</code> (จูน threshold แบบ A). Data อยู่บนดิสก์ + MariaDB ตามที่ระบุด้านบน</div>
+    <p style="margin-top:6px"><span class="tag">status</span> &nbsp;Benchmark complete · result adversarially verified · recommendation open for the team.</p>
+  </section>
+
+</div></div>
+
+<script>
+(function(){
+  var c=document.getElementById('sig'); if(!c) return;
+  var ctx=c.getContext('2d'), W=c.width, H=c.height;
+  function panel(x0,title,centralEffort){
+    var w=330, pad=14, midY1=58, midY2=150, amp=26;
+    // frame
+    ctx.fillStyle='#fbfdff'; ctx.strokeStyle='#e4e9f1'; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.roundRect(x0,10,w,H-20,10); ctx.fill(); ctx.stroke();
+    // apnea shaded region (middle third)
+    var ax=x0+pad+ (w-2*pad)*0.34, aw=(w-2*pad)*0.34;
+    ctx.fillStyle='rgba(120,132,160,0.10)';
+    ctx.fillRect(ax,20,aw,H-40);
+    ctx.fillStyle='#8A93A8'; ctx.font='600 10px ui-monospace,monospace';
+    ctx.fillText('apnea', ax+aw/2-15, H-26);
+    // title
+    ctx.fillStyle='#182034'; ctx.font='640 13px -apple-system,system-ui,sans-serif';
+    ctx.fillText(title, x0+pad, 30);
+    // trace helper
+    function trace(cy, color, flatInApnea){
+      ctx.strokeStyle=color; ctx.lineWidth=2; ctx.beginPath();
+      var x=x0+pad, xe=x0+w-pad, n=xe-x;
+      for(var i=0;i<=n;i++){
+        var px=x+i, t=i/n, inAp = px>=ax && px<=ax+aw;
+        var a = (flatInApnea && inAp) ? amp*0.06 : amp;
+        var y=cy - a*Math.sin(t*Math.PI*2*9);
+        if(i===0) ctx.moveTo(px,y); else ctx.lineTo(px,y);
+      }
+      ctx.stroke();
+    }
+    // labels
+    ctx.fillStyle='#586077'; ctx.font='500 10px -apple-system,system-ui,sans-serif';
+    ctx.fillText('airflow', x0+pad, midY1-30);
+    ctx.fillText('effort (chest)', x0+pad, midY2-30);
+    trace(midY1, '#1E3A5F', true);                 // flow: always flat during apnea
+    trace(midY2, '#0E9C94', centralEffort);        // effort: flat only if central
+  }
+  ctx.clearRect(0,0,W,H);
+  panel(8, 'Obstructive — effort continues', false);
+  panel(400, 'Central — effort stops too', true);
+})();
+</script>

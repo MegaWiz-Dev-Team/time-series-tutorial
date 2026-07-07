@@ -11,6 +11,14 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
+# ⚠️ Clinic data pulled from AirView — PHI-derived, large — NEVER COMMIT
+data/megacare-airview/
+data/nott_det_windows/
+*.edf
+*.mmrx
+# physician-signed read sidecar (name + diagnosis) — not for git
+interpretation.json
+
 # Data & Models (large files)
 #data/processed/
 #data/experiments/
