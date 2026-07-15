@@ -1,0 +1,16 @@
+Patient,GT AHI,GT Severity,Predicted Severity,Match
+patient_001,45.5,Severe,Severe,✓
+patient_002,79.2,Severe,Severe,✓
+patient_003,13.1,Mild,Mild,✓
+patient_004,53.9,Severe,Severe,✓
+patient_005,10.5,Mild,Mild,✓
+patient_006,82.7,Severe,Severe,✓
+patient_007,37.4,Severe,Severe,✓
+patient_008,25.5,Moderate,Moderate,✓
+patient_009,27.7,Moderate,Moderate,✓
+patient_010,8.5,Mild,Mild,✓
+patient_011,24.4,Moderate,Moderate,✓
+patient_012,16.3,Moderate,Moderate,✓
+patient_013,14.3,Mild,Mild,✓
+patient_014,32.6,Severe,Severe,✓
+patient_015,41.7,Severe,Severe,✓
